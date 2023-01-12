@@ -14,7 +14,7 @@ index 44db2a6bb..286f7d083 100644
  #include "OgreOverlayPrerequisites.h"
  #include "OgreResource.h"
  #include "OgreCommon.h"
-@@ -425,4 +430,8 @@ namespace Ogre
+@@ -420,4 +425,8 @@ namespace Ogre
      /** @} */
  }
  
@@ -63,7 +63,7 @@ index 755e76d00..38c86cfea 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreCommon.h"
-@@ -331,5 +336,9 @@ namespace Ogre {
+@@ -293,5 +298,9 @@ namespace Ogre {
  
  #include "OgreHeaderSuffix.h"
  
@@ -89,7 +89,7 @@ index bb35d6226..da6f2f18c 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreCommon.h"
-@@ -267,5 +272,9 @@ namespace Ogre {
+@@ -269,5 +274,9 @@ namespace Ogre {
      /** @} */
      /** @} */
  }
@@ -141,7 +141,7 @@ index cd4420cf6..324b87b99 100644
  
  #include "OgrePrerequisites.h"
  
-@@ -225,5 +230,9 @@ namespace Ogre {
+@@ -217,5 +222,9 @@ namespace Ogre {
  }
  
  #include "OgreHeaderSuffix.h"
@@ -167,7 +167,7 @@ index 97cadc3f6..6105d88ea 100644
  
  #include "OgrePrerequisites.h"
  
-@@ -384,6 +389,8 @@ namespace Ogre {
+@@ -382,6 +387,8 @@ namespace Ogre {
  
  #include "OgreHeaderSuffix.h"
  
@@ -193,7 +193,7 @@ index 9187f687f..ce9606764 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreParticleSystemRenderer.h"
-@@ -262,5 +267,9 @@ namespace Ogre {
+@@ -221,5 +226,9 @@ namespace Ogre {
  
  #include "OgreHeaderSuffix.h"
  
@@ -219,7 +219,7 @@ index c8ab575a1..cb3ef2e28 100644
  
  #include "OgrePrerequisites.h"
  
-@@ -847,5 +852,9 @@ namespace Ogre {
+@@ -824,5 +829,9 @@ namespace Ogre {
  } // namespace Ogre
  
  #include "OgreHeaderSuffix.h"
@@ -271,7 +271,7 @@ index 263c364c1..a1988cba8 100644
  
  // Default options
  #include "OgrePrerequisites.h"
-@@ -666,5 +671,9 @@ namespace Ogre {
+@@ -654,5 +659,9 @@ namespace Ogre {
  } // namespace Ogre
  
  #include "OgreHeaderSuffix.h"
@@ -297,7 +297,7 @@ index 1c2196796..a9867d32c 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreHeaderPrefix.h"
-@@ -382,5 +387,9 @@ namespace Ogre {
+@@ -374,5 +379,9 @@ namespace Ogre {
  }
  
  #include "OgreHeaderSuffix.h"
@@ -375,7 +375,7 @@ index 2c86e620f..6f8961d6b 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreRenderOperation.h"
-@@ -275,5 +280,9 @@ namespace Ogre {
+@@ -274,5 +279,9 @@ namespace Ogre {
  
  #include "OgreHeaderSuffix.h"
  
@@ -401,7 +401,7 @@ index d42d8a6b7..b6d405df0 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreCommon.h"
-@@ -916,5 +921,9 @@ namespace Ogre {
+@@ -889,5 +894,9 @@ namespace Ogre {
  } // namespace Ogre
  
  #include "OgreHeaderSuffix.h"
@@ -427,7 +427,7 @@ index 885d7c9f1..cc2cab2dc 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreMovableObject.h"
-@@ -674,5 +679,9 @@ namespace Ogre
+@@ -679,5 +684,9 @@ namespace Ogre
  } // namespace Ogre
  
  #include "OgreHeaderSuffix.h"
@@ -453,7 +453,7 @@ index 283cdf514..b10e86364 100644
  
  // Precompiler options
  #include "OgrePrerequisites.h"
-@@ -442,5 +447,9 @@ namespace Ogre {
+@@ -444,5 +449,9 @@ namespace Ogre {
  }
  
  #include "OgreHeaderSuffix.h"
@@ -479,7 +479,7 @@ index 946b50d4f..f894e513a 100644
  
  // Precompiler options
  #include "OgrePrerequisites.h"
-@@ -2083,5 +2088,9 @@ namespace Ogre {
+@@ -2097,5 +2102,9 @@ namespace Ogre {
  }
  
  #include "OgreHeaderSuffix.h"
@@ -504,7 +504,7 @@ index 729bd3046..3ddc80bf6 100644
  
  // Precompiler options
  #include "OgrePrerequisites.h"
-@@ -440,6 +444,8 @@ namespace Ogre {
+@@ -432,6 +436,8 @@ namespace Ogre {
      /** @} */
      /** @} */
  }
@@ -530,7 +530,7 @@ index ece52a464..b457e42f8 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreRenderOperation.h"
-@@ -363,5 +368,9 @@ namespace Ogre
+@@ -364,5 +369,9 @@ namespace Ogre
  } // namespace Ogre
  
  #include "OgreHeaderSuffix.h"
@@ -556,7 +556,7 @@ index ea5f56d1e..4b8d8d0a0 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreRenderOperation.h"
-@@ -319,5 +324,9 @@ namespace Ogre
+@@ -310,5 +315,9 @@ namespace Ogre
  } // namespace Ogre
  
  #include "OgreHeaderSuffix.h"
@@ -607,7 +607,7 @@ index f9e2a1054..04d9e373f 100644
 +
  
  #include "OgrePrerequisites.h"
- #include "OgreVector3.h"
+ #include "OgreVector.h"
 @@ -256,5 +261,9 @@ namespace Ogre
  
  #include "OgreHeaderSuffix.h"
@@ -634,7 +634,7 @@ index 371a605a6..e03d9090a 100644
  
  #include "OgrePrerequisites.h"
  
-@@ -597,4 +602,8 @@ namespace Ogre {
+@@ -638,4 +643,8 @@ namespace Ogre {
  #include "OgreHeaderSuffix.h"
  
  } // namespace Ogre
@@ -659,7 +659,7 @@ index 5fa5fd448..5317fbdd0 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreMovableObject.h"
-@@ -595,6 +600,8 @@ namespace Ogre
+@@ -736,6 +741,8 @@ namespace Ogre
  
  #include "OgreHeaderSuffix.h"
  
@@ -685,7 +685,7 @@ index 200146266..a2cc5c894 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreHeaderPrefix.h"
-@@ -811,5 +816,9 @@ namespace Ogre
+@@ -819,5 +824,9 @@ namespace Ogre
  }
  
  #include "OgreHeaderSuffix.h"
@@ -711,7 +711,7 @@ index b204bc439..94bab86b2 100644
  
  #include "OgrePrerequisites.h"
  
-@@ -273,4 +278,8 @@ namespace Ogre
+@@ -333,4 +338,8 @@ namespace Ogre
      /** @} */
      /** @} */
  }
@@ -736,7 +736,7 @@ index 346f35d8b..83a7ed903 100644
  
  // Precompiler options
  #include "OgrePrerequisites.h"
-@@ -583,4 +588,8 @@ namespace Ogre
+@@ -598,4 +603,8 @@ namespace Ogre
      /** @} */
  
  }
@@ -787,7 +787,7 @@ index 99542ffb1..8b6617d3e 100644
  
  #include "OgrePrerequisites.h"
  
-@@ -479,5 +484,9 @@ namespace Ogre {
+@@ -482,5 +487,9 @@ namespace Ogre {
  } //namespace
  
  #include "OgreHeaderSuffix.h"
@@ -813,7 +813,7 @@ index baa764edd..4b971c67a 100644
  
  #include "OgrePrerequisites.h"
  
-@@ -97,5 +102,9 @@ namespace Ogre {
+@@ -96,5 +101,9 @@ namespace Ogre {
  }
  
  #include "OgreHeaderSuffix.h"
@@ -839,7 +839,7 @@ index 72bcf8432..e32fdc0ab 100644
  
  #include "OgrePrerequisites.h"
  
-@@ -687,5 +692,9 @@ namespace Ogre {
+@@ -682,5 +687,9 @@ namespace Ogre {
  } // namespace Ogre
  
  #include "OgreHeaderSuffix.h"
@@ -865,7 +865,7 @@ index c50407965..82a0f111c 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreEdgeListBuilder.h"
-@@ -240,5 +245,9 @@ namespace Ogre {
+@@ -241,5 +246,9 @@ namespace Ogre {
      /** @} */
  
  }
@@ -891,7 +891,7 @@ index 06d0e9b7f..8e7a7dd92 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreHeaderPrefix.h"
-@@ -152,5 +157,9 @@ namespace Ogre {
+@@ -144,5 +149,9 @@ namespace Ogre {
  
  #include "OgreHeaderSuffix.h"
  
@@ -916,8 +916,8 @@ index 67f13e43f..fb4a9f629 100644
 +
  
  #include "OgrePrerequisites.h"
- #include "OgreVector3.h"
-@@ -520,5 +525,9 @@ namespace Ogre {
+ #include "OgreVector.h"
+@@ -524,5 +529,9 @@ namespace Ogre {
  
  #include "OgreHeaderSuffix.h"
  
@@ -969,7 +969,7 @@ index 6caa43631..c38b54a3a 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreColourValue.h"
-@@ -1754,5 +1759,9 @@ namespace Ogre {
+@@ -1669,5 +1674,9 @@ namespace Ogre {
  }
  
  #include "OgreHeaderSuffix.h"
@@ -1072,8 +1072,8 @@ index 7528f4141..1997ab6a5 100644
 +
  
  #include "OgrePrerequisites.h"
- #include "OgreVector3.h"
-@@ -144,5 +149,9 @@ namespace Ogre
+ #include "OgreVector.h"
+@@ -146,5 +151,9 @@ namespace Ogre
  }
  
  #include "OgreHeaderSuffix.h"
@@ -1099,7 +1099,7 @@ index 3a20408ce..30ee20c57 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreCommon.h"
-@@ -139,5 +144,9 @@ namespace Ogre {
+@@ -151,5 +156,9 @@ namespace Ogre {
  }
  
  #include "OgreHeaderSuffix.h"
@@ -1125,7 +1125,7 @@ index 71a0395d5..e5381990a 100644
  
  // Platform-specific stuff
  #include "OgrePlatform.h"
-@@ -375,6 +380,9 @@ namespace Ogre
+@@ -382,6 +387,9 @@ namespace Ogre
      };
  } // Ogre
  
@@ -1152,7 +1152,7 @@ index c82bbdaf6..edfbaee45 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreMath.h"
-@@ -363,5 +368,9 @@ namespace Ogre {
+@@ -367,5 +372,9 @@ namespace Ogre {
  
  
  
@@ -1229,7 +1229,7 @@ index f81349ca0..1ef1be595 100644
  
  // Precompiler options
  #include "OgrePrerequisites.h"
-@@ -1260,5 +1265,9 @@ namespace Ogre
+@@ -1316,5 +1321,9 @@ namespace Ogre
  }
  
  #include "OgreHeaderSuffix.h"
@@ -1255,7 +1255,7 @@ index 82f9be8e9..85edc5a50 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreCommon.h"
-@@ -421,4 +426,9 @@ namespace Ogre {
+@@ -385,4 +390,9 @@ namespace Ogre {
  } // namespace Ogre
  
  #include "OgreHeaderSuffix.h"
@@ -1281,7 +1281,7 @@ index 3dfcf98ea..49775daab 100644
  
  // Precompiler options
  #include "OgrePrerequisites.h"
-@@ -3586,5 +3591,9 @@ namespace Ogre {
+@@ -3624,5 +3629,9 @@ namespace Ogre {
  } // Namespace
  
  #include "OgreHeaderSuffix.h"
@@ -1307,7 +1307,7 @@ index 87e1e9d1e..e9140ed36 100644
  
  #include "OgrePrerequisites.h"
  
-@@ -459,5 +464,9 @@ namespace Ogre {
+@@ -457,5 +462,9 @@ namespace Ogre {
  }// namespace
  
  #include "OgreHeaderSuffix.h"
@@ -1385,7 +1385,7 @@ index 2a41f0d53..6947f2f60 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreShadowCameraSetup.h"
-@@ -310,5 +315,9 @@ namespace Ogre {
+@@ -312,5 +317,9 @@ namespace Ogre {
  } // namespace Ogre
  
  #include "OgreHeaderSuffix.h"
@@ -1463,7 +1463,7 @@ index 2d5b3b978..73117c412 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreRenderable.h"
-@@ -248,5 +253,9 @@ namespace Ogre {
+@@ -268,5 +273,9 @@ namespace Ogre {
      /** @} */
  } // namespace Ogre
  #include "OgreHeaderSuffix.h"
@@ -1541,7 +1541,7 @@ index 8e2482c11..66ca9c768 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreSkeleton.h"
-@@ -157,5 +162,9 @@ namespace Ogre {
+@@ -158,5 +163,9 @@ namespace Ogre {
  
  #include "OgreHeaderSuffix.h"
  
@@ -1593,7 +1593,7 @@ index eff3e95a0..307ed39b3 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreMovableObject.h"
-@@ -778,5 +783,9 @@ namespace Ogre {
+@@ -784,5 +789,9 @@ namespace Ogre {
  
  #include "OgreHeaderSuffix.h"
  
@@ -1645,7 +1645,7 @@ index a3e4636a3..ecbd11af2 100644
  
  #include "OgreCommon.h"
  #include "OgrePrerequisites.h"
-@@ -361,5 +366,9 @@ namespace Ogre {
+@@ -356,5 +361,9 @@ namespace Ogre {
  
  
  
@@ -1671,7 +1671,7 @@ index 0e6426ce3..c597be05a 100644
  
  #include "OgrePrerequisites.h"
  
-@@ -297,6 +302,8 @@ namespace Ogre {
+@@ -276,6 +281,8 @@ namespace Ogre {
  
  #include "OgreHeaderSuffix.h"
  
@@ -1697,7 +1697,7 @@ index 783d91304..362fb5151 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreRenderOperation.h"
-@@ -264,5 +269,9 @@ namespace Ogre
+@@ -263,5 +268,9 @@ namespace Ogre
  }
  
  #include "OgreHeaderSuffix.h"
@@ -1722,7 +1722,7 @@ index 6235951c2..822c7bd73 100644
  
  #include "OgrePrerequisites.h"
  
-@@ -475,4 +479,8 @@ namespace Ogre {
+@@ -456,4 +460,8 @@ namespace Ogre {
      /** @} */
  }// Namespace
  
@@ -1772,7 +1772,7 @@ index 72d68d97f..c41a561f0 100644
  
  #include "OgrePrerequisites.h"
  #include "OgreCommon.h"
-@@ -442,5 +447,9 @@ namespace Ogre {
+@@ -444,5 +449,9 @@ namespace Ogre {
  }
  
  #include "OgreHeaderSuffix.h"
@@ -1798,7 +1798,7 @@ index 071039a86..efe8859fc 100644
  
  #include "OgreConfig.h"
  #include "OgreExports.h"
-@@ -108,5 +113,9 @@ THE SOFTWARE.
+@@ -107,6 +112,10 @@ THE SOFTWARE.
  #if OGRE_NO_ZIP_ARCHIVE == 0
  #   include "OgreZip.h"
  #endif
@@ -1807,21 +1807,22 @@ index 071039a86..efe8859fc 100644
 +#endif
 +
  
- #endif 
+ #if OGRE_COMPILER == OGRE_COMPILER_MSVC
+ #define OGRE_IGNORE_DEPRECATED_BEGIN __pragma(warning(push)) \
 diff --git a/PlugIns/OctreeZone/CMakeLists.txt b/PlugIns/OctreeZone/CMakeLists.txt
 --- a/PlugIns/OctreeZone/CMakeLists.txt	2019-06-24 23:04:20.000000000 +0000
 +++ b/PlugIns/OctreeZone/CMakeLists.txt	2019-10-04 16:58:03.669588969 +0000
 @@ -23,6 +23,11 @@ generate_export_header(Plugin_OctreeZone
      EXPORT_MACRO_NAME _OgreOctreeZonePluginExport
      EXPORT_FILE_NAME ${PROJECT_BINARY_DIR}/include/OgreOctreeZonePrerequisites.h)
-
+ 
 +if (UNIX)
 +  set_property(TARGET Plugin_OctreeZone APPEND PROPERTY
 +    INSTALL_RPATH ${CMAKE_INSTALL_PREFIX}/${OGRE_LIB_DIRECTORY}/OGRE)
 +endif ()
 +
  ogre_config_framework(Plugin_OctreeZone)
-
+ 
  ogre_config_plugin(Plugin_OctreeZone)
 diff --git a/OgreMain/include/OgreTimer.h b/OgreMain/include/OgreTimer.h
 --- a/OgreMain/include/OgreTimer.h	2019-06-24 16:04:20.000000000 -0700
