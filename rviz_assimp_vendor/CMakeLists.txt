@@ -24,7 +24,7 @@ macro(build_assimp)
     list(APPEND extra_cmake_args "-DCMAKE_CXX_FLAGS=/w /EHsc")
     list(APPEND extra_cmake_args "-DCMAKE_C_FLAGS=/w")
   else()
-    list(APPEND extra_cmake_args "-DCMAKE_CXX_FLAGS=${CMAKE_CXX_FLAGS} -std=c++14 -w")
+    list(APPEND extra_cmake_args "-DCMAKE_CXX_FLAGS=${CMAKE_CXX_FLAGS} -std=c++17 -w")
     list(APPEND extra_cmake_args "-DCMAKE_C_FLAGS=${CMAKE_C_FLAGS} -w")
   endif()
 
@@ -41,9 +41,9 @@ macro(build_assimp)
   endif()
 
   include(ExternalProject)
-  ExternalProject_Add(assimp-4.1.0
-    URL https://github.com/assimp/assimp/archive/v4.1.0.tar.gz
-    URL_MD5 83b53a10c38d964bd1e69da0606e2727
+  ExternalProject_Add(assimp-5.2.5
+    URL https://github.com/assimp/assimp/archive/refs/tags/v5.2.5.tar.gz
+    URL_MD5 0b5a5a2714f1126b9931cdb95f512c91
     TIMEOUT 600
     LOG_CONFIGURE ${should_log}
     LOG_BUILD ${should_log}
@@ -63,15 +63,11 @@ macro(build_assimp)
   )
 endmacro()
 
-# Override ON so that the following CMake logic in assimp 5.0.1 and older
-# doesn't result in a CMake warning: if(ON)
-#   https://github.com/ros2/rviz/issues/524
-#   https://bugs.launchpad.net/ubuntu/+source/assimp/+bug/1869405
-set(ON 1)
+
 
 find_package(assimp QUIET)
 
-if(FORCE_BUILD_VENDOR_PKG OR NOT assimp_FOUND OR "${assimp_VERSION}" VERSION_LESS 4.1.0)
+if(FORCE_BUILD_VENDOR_PKG OR NOT assimp_FOUND OR "${assimp_VERSION}" VERSION_LESS 5.2.5)
   build_assimp()
 
   if(WIN32)

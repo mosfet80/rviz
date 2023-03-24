@@ -42,6 +42,8 @@
 #include <string>
 
 #include "rviz_rendering/material_manager.hpp"
+#include <functional>
+
 
 static const uint32_t MAX_ELEMENTS = (65536 / 4);
 

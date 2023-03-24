@@ -4,8 +4,17 @@ project(rviz_rendering_tests)
 
 # Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 14)
+  set(CMAKE_CXX_STANDARD 17)
 endif()
+
+find_package(OGRE REQUIRED CONFIG)
+
+if(UNIX)
+ set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
+include_directories(${OGRE_INCLUDE_DIRS}/RenderSystems/glad)
+set(CMAKE_INSTALL_RPATH ${CMAKE_BINARY_DIR}/lib ${OGRE_LIBRARY_DIRS} )
+endif(UNIX)
+
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic -Wnon-virtual-dtor -Woverloaded-virtual)

@@ -28,6 +28,7 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 
+
 # do find_package(rviz_ogre_vendor) first to make sure the custom OGRE is found
 find_package(rviz_ogre_vendor REQUIRED)
 find_package(rviz_assimp_vendor REQUIRED)
@@ -38,6 +39,8 @@ find_package(ament_index_cpp REQUIRED)
 find_package(eigen3_cmake_module REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(resource_retriever REQUIRED)
+
+
 
 # TODO(wjwwood): this block is to setup the windeployqt tool, could be removed later.
 if(Qt5_FOUND AND WIN32 AND TARGET Qt5::qmake AND NOT TARGET Qt5::windeployqt)
@@ -63,6 +66,15 @@ endif()
 
 # These need to be added in the add_library() call
 qt5_wrap_cpp(rviz_rendering_moc_files include/rviz_rendering/render_window.hpp)
+
+find_package(OGRE REQUIRED CONFIG)
+
+if(UNIX)
+ set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
+include_directories(${OGRE_INCLUDE_DIRS}/RenderSystems/glad)
+set(CMAKE_INSTALL_RPATH ${CMAKE_BINARY_DIR}/lib ${OGRE_LIBRARY_DIRS} )
+endif(UNIX)
+
 
 add_library(rviz_rendering SHARED
   ${rviz_rendering_moc_files}
@@ -109,6 +121,7 @@ target_include_directories(rviz_rendering
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
     ${Eigen3_INCLUDE_DIRS}
+    ${OGRE_INCLUDE_DIRS}
 )
 # Causes the visibility macros to use dllexport rather than dllimport,
 # which is appropriate when building the dll but not consuming it.
@@ -147,6 +160,7 @@ install(
 )
 
 set(rviz_rendering_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src/cmake")
+
 include(${CMAKE_CURRENT_SOURCE_DIR}/src/cmake/register_rviz_ogre_media_exports_hook-extras.cmake)
 
 install(DIRECTORY src/cmake
