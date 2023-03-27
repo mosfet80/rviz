@@ -30,7 +30,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 # do find_package(rviz_ogre_vendor) first to make sure the custom OGRE is found
 find_package(rviz_ogre_vendor REQUIRED)
-
+find_package(OGRE)
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
 
 find_package(geometry_msgs REQUIRED)
