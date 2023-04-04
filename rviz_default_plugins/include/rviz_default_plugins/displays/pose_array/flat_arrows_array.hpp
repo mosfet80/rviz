@@ -40,7 +40,7 @@
 #include <OgreQuaternion.h>
 
 #include "rviz_default_plugins/displays/pose_array/pose_array_display.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
@@ -48,7 +48,7 @@ namespace displays
 {
 struct OgrePose;
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC FlatArrowsArray
+class RVIZ_COMMON_PUBLIC FlatArrowsArray
 {
 public:
   explicit FlatArrowsArray(Ogre::SceneManager * scene_manager_);

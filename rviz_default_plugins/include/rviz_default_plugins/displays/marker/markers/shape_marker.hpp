@@ -32,9 +32,9 @@
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__MARKER__MARKERS__SHAPE_MARKER_HPP_
 
 #include <memory>
-
+#include <OgreSceneNode.h>
 #include "rviz_default_plugins/displays/marker/markers/marker_base.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 // This is necessary because of using stl types with this display. Nevertheless, if you are
 // experiencing problems when subclassing this class, please make sure ROS2 and your code were
@@ -56,7 +56,7 @@ namespace displays
 namespace markers
 {
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC ShapeMarker : public MarkerBase
+class RVIZ_COMMON_PUBLIC ShapeMarker : public MarkerBase
 {
 public:
   ShapeMarker(

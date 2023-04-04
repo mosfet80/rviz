@@ -38,7 +38,7 @@
 #include "rviz_common/interaction/selection_handler.hpp"
 
 #include "rviz_default_plugins/displays/pose/pose_display.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_common
 {
@@ -55,7 +55,7 @@ namespace rviz_default_plugins
 namespace displays
 {
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC PoseDisplaySelectionHandler : public
+class RVIZ_COMMON_PUBLIC PoseDisplaySelectionHandler : public
   rviz_common::interaction::SelectionHandler
 {
 public:

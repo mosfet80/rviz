@@ -41,7 +41,7 @@
 #include "rviz_rendering/objects/axes.hpp"
 #include "rviz_rendering/objects/billboard_line.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -68,7 +68,7 @@ namespace displays
  * \class PathDisplay
  * \brief Displays a nav_msgs::msg::Path message
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC PathDisplay : public
+class RVIZ_COMMON_PUBLIC PathDisplay : public
   rviz_common::MessageFilterDisplay<nav_msgs::msg::Path>
 {
   Q_OBJECT

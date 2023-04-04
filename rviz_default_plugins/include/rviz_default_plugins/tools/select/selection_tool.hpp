@@ -35,7 +35,7 @@
 #include "rviz_common/tool.hpp"
 #include "rviz_common/interaction/forwards.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -49,7 +49,7 @@ namespace tools
 
 class MoveTool;
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC SelectionTool : public rviz_common::Tool
+class RVIZ_COMMON_PUBLIC SelectionTool : public rviz_common::Tool
 {
 public:
   SelectionTool();

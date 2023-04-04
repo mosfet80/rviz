@@ -30,14 +30,14 @@
 
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__MARKER__MARKERS__MARKER_SELECTION_HANDLER_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__MARKER__MARKERS__MARKER_SELECTION_HANDLER_HPP_
-
+/*
 #include <memory>
 #include <string>
 #include <utility>
-
+*/
 #include "rviz_common/interaction/forwards.hpp"
 #include "rviz_common/interaction/selection_manager.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_common
 {
@@ -58,7 +58,7 @@ class InteractiveMarkerControl;
 class MarkerBase;
 typedef std::pair<std::string, int32_t> MarkerID;
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC MarkerSelectionHandler : public
+class RVIZ_COMMON_PUBLIC MarkerSelectionHandler : public
   rviz_common::interaction::SelectionHandler
 {
 public:

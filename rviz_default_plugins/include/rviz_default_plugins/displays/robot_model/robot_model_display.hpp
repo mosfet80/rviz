@@ -42,7 +42,7 @@
 
 #include "rviz_default_plugins/transformation/transformer_guard.hpp"
 #include "rviz_default_plugins/transformation/tf_frame_transformer.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -83,7 +83,7 @@ namespace displays
  * \brief Uses a robot xml description to display the pieces of a robot at the transforms
  * broadcast by rosTF
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC RobotModelDisplay : public
+class RVIZ_COMMON_PUBLIC RobotModelDisplay : public
   rviz_common::RosTopicDisplay<std_msgs::msg::String>
 {
   Q_OBJECT

@@ -41,7 +41,7 @@
 #include "urdf/model.h"  // can be replaced later by urdf_model/types.h
 
 #include "rviz_default_plugins/robot/link_updater.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -94,7 +94,7 @@ class RobotJoint;
  * Can display either the visual models of the robot,
  * or the collision models.
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC Robot : public QObject
+class RVIZ_COMMON_PUBLIC Robot : public QObject
 {
   Q_OBJECT
 

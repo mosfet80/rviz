@@ -31,24 +31,19 @@
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__MARKER__MARKER_COMMON_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__MARKER__MARKER_COMMON_HPP_
 
-#include <map>
-#include <memory>
-#include <mutex>
-#include <set>
-#include <string>
-#include <vector>
-#include <utility>
 
-#include <OgreSceneNode.h>
-
-#include "visualization_msgs/msg/marker.hpp"
-#include "visualization_msgs/msg/marker_array.hpp"
-
-#include "rviz_common/properties/bool_property.hpp"
 #include "rviz_common/properties/status_property.hpp"
-#include "rviz_common/interaction/forwards.hpp"
+#include "rviz_common/properties/bool_property.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+
+#include "visualization_msgs/msg/marker_array.hpp"
+#include "rviz_common/validate_floats.hpp"
+
+#include "rviz_default_plugins/displays/marker/markers/marker_factory.hpp"
+#include "rviz_common/display.hpp"
+#include<OgreMaterial.h>
+
+#include <mutex>
 
 namespace rviz_common
 {
@@ -85,7 +80,7 @@ typedef std::pair<std::string, int32_t> MarkerID;
  * \class MarkerCommon
  * Common code shared by MarkerDisplay and MarkerArrayDisplay
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC MarkerCommon
+class RVIZ_COMMON_PUBLIC MarkerCommon
 {
 public:
   explicit MarkerCommon(rviz_common::Display * display);
@@ -177,7 +172,7 @@ private:
 
 /** @brief Manager of a single marker namespace.  Keeps a hash from
  * marker IDs to MarkerBasePtr, and creates or destroys them when necessary. */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC MarkerNamespace : public rviz_common::properties::BoolProperty
+class RVIZ_COMMON_PUBLIC MarkerNamespace : public rviz_common::properties::BoolProperty
 {
   Q_OBJECT
 

@@ -34,12 +34,12 @@
 #include "sensor_msgs/msg/point_cloud.hpp"
 #include "sensor_msgs/msg/point_cloud2.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
 
-RVIZ_DEFAULT_PLUGINS_PUBLIC
+RVIZ_COMMON_PUBLIC
 sensor_msgs::msg::PointCloud2::ConstSharedPtr
 convertPointCloudToPointCloud2(sensor_msgs::msg::PointCloud::ConstSharedPtr input);
 

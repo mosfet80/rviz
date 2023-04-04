@@ -39,7 +39,7 @@
 #include "rviz_rendering/objects/shape.hpp"
 #include "rviz_common/message_filter_display.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 // TODO(botteroa): Originally the display extended the MessageFilterDisplay. Revisit when available.
 // #include "rviz_common/message_filter_display.hpp"
@@ -77,7 +77,7 @@ struct OgrePose
 };
 
 /** @brief Displays a geometry_msgs/PoseArray message as a bunch of line-drawn arrows. */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC PoseArrayDisplay : public
+class RVIZ_COMMON_PUBLIC PoseArrayDisplay : public
   rviz_common::MessageFilterDisplay<geometry_msgs::msg::PoseArray>
 {
   Q_OBJECT

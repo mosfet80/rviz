@@ -49,7 +49,7 @@
 # include "rviz_common/properties/int_property.hpp"
 
 # include "rviz_default_plugins/displays/image/ros_image_texture_iface.hpp"
-# include "rviz_default_plugins/visibility_control.hpp"
+# include "rviz_common/visibility_control.hpp"
 #include "rviz_default_plugins/displays/image/image_transport_display.hpp"
 #endif
 
@@ -69,7 +69,7 @@ namespace displays
  * \class ImageDisplay
  *
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC ImageDisplay : public
+class RVIZ_COMMON_PUBLIC ImageDisplay : public
   rviz_default_plugins::displays::ImageTransportDisplay<sensor_msgs::msg::Image>
 {
   Q_OBJECT

@@ -37,7 +37,7 @@
 #include "rviz_common/message_filter_display.hpp"
 
 #include "rviz_default_plugins/displays/pointcloud/point_cloud_common.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_common
 {
@@ -66,7 +66,7 @@ struct Offsets
  * If you set the channel's name to "rgb", it will interpret the channel as an integer rgb value, with r, g and b
  * all being 8 bits.
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC PointCloud2Display : public
+class RVIZ_COMMON_PUBLIC PointCloud2Display : public
   rviz_common::MessageFilterDisplay<sensor_msgs::msg::PointCloud2>
 {
 public:

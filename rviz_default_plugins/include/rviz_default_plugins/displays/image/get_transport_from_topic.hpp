@@ -30,19 +30,18 @@
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__IMAGE__GET_TRANSPORT_FROM_TOPIC_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__IMAGE__GET_TRANSPORT_FROM_TOPIC_HPP_
 
-#include <string>
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
 namespace displays
 {
 
-RVIZ_DEFAULT_PLUGINS_PUBLIC
+RVIZ_COMMON_PUBLIC
 std::string getTransportFromTopic(const std::string & topic);
 
-RVIZ_DEFAULT_PLUGINS_PUBLIC
+RVIZ_COMMON_PUBLIC
 std::string getBaseTopicFromTopic(const std::string & topic);
 
 

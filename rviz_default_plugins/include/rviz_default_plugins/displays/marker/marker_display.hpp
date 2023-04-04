@@ -39,7 +39,7 @@
 #include "rviz_common/message_filter_display.hpp"
 
 #include "rviz_default_plugins/displays/marker/marker_common.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
@@ -53,7 +53,7 @@ namespace displays
  * Markers come in as visualization_msgs::msg::Marker messages.
  * See the Marker message for more information.
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC MarkerDisplay
+class RVIZ_COMMON_PUBLIC MarkerDisplay
   : public rviz_common::MessageFilterDisplay<visualization_msgs::msg::Marker>
 {
 public:

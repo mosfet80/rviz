@@ -55,7 +55,7 @@
 #include "rviz_common/interaction/forwards.hpp"
 
 #include "rviz_default_plugins/robot/robot_element_base_class.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -102,7 +102,7 @@ typedef std::shared_ptr<RobotLinkSelectionHandler> RobotLinkSelectionHandlerPtr;
  * \struct RobotLink
  * \brief Contains any data we need from a link in the robot.
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC RobotLink : public RobotElementBaseClass
+class RVIZ_COMMON_PUBLIC RobotLink : public RobotElementBaseClass
 {
   Q_OBJECT
 

@@ -1,5 +1,18 @@
 cmake_minimum_required(VERSION 3.5)
 
+find_package(OGRE REQUIRED CONFIG)
+
+if(OGRE_VERSION VERSION_GREATER "1.12.10")
+   set(CMAKE_CXX_STANDARD 17)
+   if(UNIX)
+      set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
+      include_directories(${OGRE_INCLUDE_DIRS}/RenderSystems/glad)
+      set(CMAKE_INSTALL_RPATH ${CMAKE_BINARY_DIR}/lib ${OGRE_LIBRARY_DIRS} )
+   endif(UNIX)
+else()
+   build_ogre()
+endif()
+
 project(rviz_rendering_tests)
 
 # Default to C++14

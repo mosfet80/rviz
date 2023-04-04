@@ -31,16 +31,13 @@
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__MAP__SWATCH_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__MAP__SWATCH_HPP_
 
-#include <cstddef>
-#include <string>
-
 #include <OgreSharedPtr.h>
 #include <OgrePrerequisites.h>
 #include <OgreBlendMode.h>
 
 #include "nav_msgs/msg/occupancy_grid.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -58,39 +55,39 @@ class MapDisplay;
 class Swatch
 {
 public:
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   Swatch(
     Ogre::SceneManager * scene_manager,
     Ogre::SceneNode * parent_scene_node,
     size_t x, size_t y, size_t width, size_t height,
     float resolution, bool draw_under);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   ~Swatch();
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   void updateAlpha(
     const Ogre::SceneBlendType & sceneBlending, bool depth_write, float alpha);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   void updateData(const nav_msgs::msg::OccupancyGrid & map);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   void setVisible(bool visible);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   void resetOldTexture();
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   void setRenderQueueGroup(uint8_t group);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   void setDepthWriteEnabled(bool depth_write_enabled);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   Ogre::Pass * getTechniquePass();
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   std::string getTextureName();
 
 private:

@@ -31,12 +31,10 @@
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__MARKER__MARKERS__ARROW_MARKER_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__MARKER__MARKERS__ARROW_MARKER_HPP_
 
-#include <memory>
-
 #include "marker_base.hpp"
 
 #include "rviz_rendering/objects/arrow.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 // This is necessary because of using stl types with this display. Nevertheless, if you are
 // experiencing problems when subclassing this class, please make sure ROS2 and your code were
@@ -62,7 +60,7 @@ namespace displays
 namespace markers
 {
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC ArrowMarker : public MarkerBase
+class RVIZ_COMMON_PUBLIC ArrowMarker : public MarkerBase
 {
 public:
   ArrowMarker(

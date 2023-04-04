@@ -31,19 +31,27 @@
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__INTERACTIVE_MARKERS__INTERACTIVE_MARKER_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__INTERACTIVE_MARKERS__INTERACTIVE_MARKER_HPP_
 
+
+
 #ifndef Q_MOC_RUN
-#include <map>
+/*#include <map>
 #include <memory>
 #include <mutex>
 #include <string>
 #include <thread>
 #include <vector>
-
+*/
 #include <OgreVector.h>
 #include <OgreQuaternion.h>
 #endif
 
-#include <visualization_msgs/msg/interactive_marker.hpp>
+#include <OgreSceneNode.h>
+#include <OgreSceneManager.h>
+#include <OgreMaterialManager.h>
+#include <OgreResourceGroupManager.h>
+#include <OgreMath.h>
+#include "interactive_markers/tools.hpp"
+
 #include <visualization_msgs/msg/interactive_marker_pose.hpp>
 #include <visualization_msgs/msg/interactive_marker_feedback.hpp>
 
@@ -54,7 +62,7 @@
 
 #include "rviz_default_plugins/displays/interactive_markers/interactive_marker_control.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -74,7 +82,7 @@ namespace displays
 {
 class InteractiveMarkerDisplay;
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC InteractiveMarker : public QObject
+class RVIZ_COMMON_PUBLIC InteractiveMarker : public QObject
 {
   Q_OBJECT
 

@@ -35,6 +35,7 @@
 
 #include <cstdint>
 #include <string>
+#include <functional>
 
 #include <OgreRoot.h>
 #include <Overlay/OgreOverlaySystem.h>  // NOLINT cpplint cannot handle include order here

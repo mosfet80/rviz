@@ -35,7 +35,7 @@
 
 #include "rviz_default_plugins/displays/marker/markers/marker_base.hpp"
 #include "rviz_default_plugins/displays/marker/markers/line_marker_base.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
@@ -44,7 +44,7 @@ namespace displays
 namespace markers
 {
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC LineListMarker : public LineMarkerBase
+class RVIZ_COMMON_PUBLIC LineListMarker : public LineMarkerBase
 {
 public:
   LineListMarker(

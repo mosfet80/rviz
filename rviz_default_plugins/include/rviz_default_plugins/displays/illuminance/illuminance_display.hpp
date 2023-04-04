@@ -47,7 +47,7 @@ namespace displays
  * \class IlluminanceDisplay
  */
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC IlluminanceDisplay
+class RVIZ_COMMON_PUBLIC IlluminanceDisplay
   : public PointCloudScalarDisplay<sensor_msgs::msg::Illuminance>
 {
   Q_OBJECT

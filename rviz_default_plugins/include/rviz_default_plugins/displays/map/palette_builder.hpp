@@ -33,7 +33,7 @@
 #include <memory>
 #include <vector>
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
@@ -48,29 +48,29 @@ class PaletteBuilder : public
   std::enable_shared_from_this<PaletteBuilder>
 {
 public:
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   PaletteBuilder();
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   virtual ~PaletteBuilder() = default;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   std::shared_ptr<PaletteBuilder> setColorForIllegalPositiveValues(
     unsigned char r, unsigned char g, unsigned char b);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   std::shared_ptr<PaletteBuilder> setRedYellowColorsForIllegalNegativeValues();
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   std::shared_ptr<PaletteBuilder> setColorForLegalNegativeValueMinusOne(
     unsigned char r, unsigned char g, unsigned char b);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   std::shared_ptr<PaletteBuilder> setColorForValue(
     unsigned char palette_position,
     unsigned char r, unsigned char g, unsigned char b, unsigned char alpha);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   std::vector<unsigned char> buildPalette();
 
 private:

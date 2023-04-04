@@ -34,14 +34,14 @@
 #include <OgreSharedPtr.h>
 
 #include "sensor_msgs/msg/image.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
 namespace displays
 {
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC ROSImageTextureIface
+class RVIZ_COMMON_PUBLIC ROSImageTextureIface
 {
 public:
   ROSImageTextureIface() = default;

@@ -31,12 +31,8 @@
 #ifndef RVIZ_COMMON__ROS_INTEGRATION__ROS_CLIENT_ABSTRACTION_HPP_
 #define RVIZ_COMMON__ROS_INTEGRATION__ROS_CLIENT_ABSTRACTION_HPP_
 
-#include <memory>
-#include <string>
-
 #include "ros_client_abstraction_iface.hpp"
 #include "ros_node_abstraction_iface.hpp"
-#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_common
 {

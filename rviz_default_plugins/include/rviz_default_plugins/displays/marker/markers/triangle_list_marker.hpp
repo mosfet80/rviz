@@ -37,7 +37,7 @@
 #include <OgreSharedPtr.h>
 
 #include "rviz_default_plugins/displays/marker/markers/marker_base.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 #include "sensor_msgs/msg/image.hpp"
 
 // This is necessary because of using stl types with this display. Nevertheless, if you are
@@ -61,7 +61,7 @@ namespace displays
 namespace markers
 {
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC TriangleListMarker : public MarkerBase
+class RVIZ_COMMON_PUBLIC TriangleListMarker : public MarkerBase
 {
 public:
   TriangleListMarker(

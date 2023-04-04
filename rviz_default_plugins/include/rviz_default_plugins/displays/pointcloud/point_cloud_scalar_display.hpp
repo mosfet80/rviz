@@ -42,7 +42,7 @@
 #include "rviz_common/message_filter_display.hpp"
 #include "rviz_common/validate_floats.hpp"
 #include "rviz_default_plugins/displays/pointcloud/point_cloud_common.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 #include "rviz_rendering/objects/point_cloud.hpp"
 
 #include "sensor_msgs/msg/point_cloud2.hpp"
@@ -61,7 +61,7 @@ namespace displays
  */
 
 template<typename MessageType>
-class RVIZ_DEFAULT_PLUGINS_PUBLIC PointCloudScalarDisplay
+class RVIZ_COMMON_PUBLIC PointCloudScalarDisplay
   : public rviz_common::MessageFilterDisplay<MessageType>
 {
 public:

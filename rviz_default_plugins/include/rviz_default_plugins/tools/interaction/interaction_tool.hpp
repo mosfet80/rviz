@@ -38,7 +38,7 @@
 #include "rviz_common/tool.hpp"
 
 #include "rviz_default_plugins/tools/move/move_tool.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_common
 {
@@ -56,7 +56,7 @@ namespace rviz_default_plugins
 namespace tools
 {
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC InteractionTool : public rviz_common::Tool
+class RVIZ_COMMON_PUBLIC InteractionTool : public rviz_common::Tool
 {
   Q_OBJECT
 

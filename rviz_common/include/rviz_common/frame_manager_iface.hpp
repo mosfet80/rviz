@@ -31,35 +31,27 @@
 #ifndef RVIZ_COMMON__FRAME_MANAGER_IFACE_HPP_
 #define RVIZ_COMMON__FRAME_MANAGER_IFACE_HPP_
 
-#include <map>
-#include <memory>
-#include <mutex>
-#include <string>
-#include <vector>
 
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wkeyword-macro"
 #endif
 
-#include <OgreVector.h>
-#include <OgreQuaternion.h>
+
 
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
 
-#include <QObject>  // NOLINT: cpplint is unable to handle the include order here
-
-#include "geometry_msgs/msg/pose.hpp"
-#include "rclcpp/clock.hpp"
-#include "rclcpp/time.hpp"
 
 // TODO(wjwwood): reenable this when message_filters is ported.
 // #include "tf2_ros/message_filter.h"
 
-#include "rviz_common/visibility_control.hpp"
+
 #include "rviz_common/transformation/frame_transformer.hpp"
+#include <OgreVector.h>
+#include <QObject>  // NOLINT: cpplint is unable to handle the include order here
+
 
 namespace tf2_ros
 {

@@ -36,7 +36,7 @@
 #include "rviz_rendering/objects/point_cloud.hpp"
 
 #include "rviz_default_plugins/displays/marker/markers/marker_base.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -50,7 +50,7 @@ namespace displays
 namespace markers
 {
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC PointsMarker : public MarkerBase
+class RVIZ_COMMON_PUBLIC PointsMarker : public MarkerBase
 {
 public:
   using SharedPtr = std::shared_ptr<PointsMarker>;

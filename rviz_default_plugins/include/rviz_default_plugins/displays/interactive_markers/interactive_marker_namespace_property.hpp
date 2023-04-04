@@ -31,19 +31,18 @@
 #define /* NOLINT */ \
   RVIZ_DEFAULT_PLUGINS__DISPLAYS__INTERACTIVE_MARKERS__INTERACTIVE_MARKER_NAMESPACE_PROPERTY_HPP_
 
-#include <string>
 
 #include "rviz_common/properties/editable_enum_property.hpp"
 #include "rviz_common/ros_integration/ros_node_abstraction_iface.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
 namespace displays
 {
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC InteractiveMarkerNamespaceProperty
+class RVIZ_COMMON_PUBLIC InteractiveMarkerNamespaceProperty
   : public rviz_common::properties::EditableEnumProperty
 {
   Q_OBJECT

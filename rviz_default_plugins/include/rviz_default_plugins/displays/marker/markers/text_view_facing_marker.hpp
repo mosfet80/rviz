@@ -32,7 +32,7 @@
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__MARKER__MARKERS__TEXT_VIEW_FACING_MARKER_HPP_
 
 #include "rviz_default_plugins/displays/marker/markers/marker_base.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -51,7 +51,7 @@ namespace displays
 namespace markers
 {
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC TextViewFacingMarker : public MarkerBase
+class RVIZ_COMMON_PUBLIC TextViewFacingMarker : public MarkerBase
 {
 public:
   TextViewFacingMarker(

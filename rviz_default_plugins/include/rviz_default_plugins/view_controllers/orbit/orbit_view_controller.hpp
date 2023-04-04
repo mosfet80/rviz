@@ -43,7 +43,7 @@
 #include "rviz_common/properties/float_property.hpp"
 #include "rviz_common/properties/vector_property.hpp"
 #include "rviz_rendering/objects/shape.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
@@ -60,7 +60,7 @@ namespace view_controllers
  *
  * The coordinates are then offset by the focal point
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC OrbitViewController : public
+class RVIZ_COMMON_PUBLIC OrbitViewController : public
   rviz_common::FramePositionTrackingViewController
 {
   Q_OBJECT

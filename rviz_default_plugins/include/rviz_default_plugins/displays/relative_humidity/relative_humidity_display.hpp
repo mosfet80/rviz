@@ -47,7 +47,7 @@ namespace displays
  * \class RelativeHumidityDisplay
  */
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC RelativeHumidityDisplay
+class RVIZ_COMMON_PUBLIC RelativeHumidityDisplay
   : public PointCloudScalarDisplay<sensor_msgs::msg::RelativeHumidity>
 {
   Q_OBJECT

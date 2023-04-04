@@ -34,13 +34,10 @@
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__MARKER__MARKERS__MARKER_FACTORY_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__MARKER__MARKERS__MARKER_FACTORY_HPP_
 
-#include <memory>
 
-#include "visualization_msgs/msg/marker.hpp"
-
-#include "rviz_default_plugins/displays/marker/markers/marker_base.hpp"
 #include "rviz_default_plugins/displays/marker/marker_common.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_default_plugins/displays/marker/markers/marker_base.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
@@ -58,7 +55,7 @@ namespace markers
  * Markers come in as visualization_msgs::msg::Marker messages.
  * See the Marker message for more information.
 */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC MarkerFactory
+class RVIZ_COMMON_PUBLIC MarkerFactory
 {
 public:
   /// Initialization of the marker factory

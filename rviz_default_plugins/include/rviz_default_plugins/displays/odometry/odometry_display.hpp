@@ -44,7 +44,7 @@
 
 #include "rviz_rendering/objects/covariance_visual.hpp"
 #include "rviz_common/message_filter_display.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_rendering
 {
@@ -72,7 +72,7 @@ namespace displays
  * \class OdometryDisplay
  * \brief Accumulates and displays the pose from a nav_msgs::Odometry message
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC OdometryDisplay : public
+class RVIZ_COMMON_PUBLIC OdometryDisplay : public
   rviz_common::MessageFilterDisplay<nav_msgs::msg::Odometry>
 {
   Q_OBJECT

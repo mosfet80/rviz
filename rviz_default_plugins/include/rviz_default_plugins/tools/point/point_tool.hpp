@@ -41,7 +41,7 @@
 
 #include "rviz_common/tool.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_common
 {
@@ -60,7 +60,7 @@ namespace tools
 
 //! The Point Tool allows the user to click on a point which
 //! gets published as a PointStamped message.
-class RVIZ_DEFAULT_PLUGINS_PUBLIC PointTool : public rviz_common::Tool
+class RVIZ_COMMON_PUBLIC PointTool : public rviz_common::Tool
 {
   Q_OBJECT
 

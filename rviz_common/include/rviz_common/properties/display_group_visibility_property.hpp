@@ -32,10 +32,6 @@
 
 #include "display_visibility_property.hpp"
 
-#include <cstdint>
-#include <map>
-#include <string>
-
 #include <QObject>  // NOLINT: cpplint cannot handle the include order here
 #include <QString>  // NOLINT: cpplint cannot handle the include order here
 

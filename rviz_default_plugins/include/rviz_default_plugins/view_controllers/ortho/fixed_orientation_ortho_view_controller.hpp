@@ -35,7 +35,7 @@
 #include <OgreQuaternion.h>
 
 #include "rviz_common/frame_position_tracking_view_controller.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_rendering
 {
@@ -61,7 +61,7 @@ namespace rviz_default_plugins
 namespace view_controllers
 {
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC FixedOrientationOrthoViewController : public
+class RVIZ_COMMON_PUBLIC FixedOrientationOrthoViewController : public
   rviz_common::FramePositionTrackingViewController
 {
   Q_OBJECT

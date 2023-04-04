@@ -41,7 +41,7 @@
 #include "rviz_common/message_filter_display.hpp"
 #include "rviz_common/display_context.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_rendering
 {
@@ -67,7 +67,7 @@ namespace displays
  * \class GridCellsDisplay
  * \brief Displays a nav_msgs::GridCells message
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC GridCellsDisplay : public
+class RVIZ_COMMON_PUBLIC GridCellsDisplay : public
   rviz_common::MessageFilterDisplay<nav_msgs::msg::GridCells>
 {
   Q_OBJECT

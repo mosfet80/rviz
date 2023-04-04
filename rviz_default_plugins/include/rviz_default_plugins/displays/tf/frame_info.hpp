@@ -36,7 +36,7 @@
 #include "tf2/time.h"
 
 #include "rviz_default_plugins/displays/tf/tf_display.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_common
 {
@@ -57,7 +57,7 @@ namespace displays
 {
 
 /** @brief Internal class needed only by TFDisplay. */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC FrameInfo : public QObject
+class RVIZ_COMMON_PUBLIC FrameInfo : public QObject
 {
   Q_OBJECT
 

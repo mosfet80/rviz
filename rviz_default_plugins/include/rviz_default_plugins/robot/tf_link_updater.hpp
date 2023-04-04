@@ -36,7 +36,7 @@
 
 #include "link_updater.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace tf
 {
@@ -53,7 +53,7 @@ namespace rviz_default_plugins
 namespace robot
 {
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC TFLinkUpdater : public LinkUpdater
+class RVIZ_COMMON_PUBLIC TFLinkUpdater : public LinkUpdater
 {
 public:
   typedef std::function<void (StatusLevel, const std::string &, const std::string &)>

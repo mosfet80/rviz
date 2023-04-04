@@ -43,7 +43,7 @@
 
 #include "rviz_common/interaction/forwards.hpp"
 #include "rviz_common/interactive_object.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 // This is necessary because of using stl types with this display. Nevertheless, if you are
 // experiencing problems when subclassing this class, please make sure ROS2 and your code were
@@ -78,7 +78,7 @@ class MarkerSelectionHandler;
 typedef std::pair<std::string, int32_t> MarkerID;
 typedef std::set<Ogre::MaterialPtr> S_MaterialPtr;
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC MarkerBase
+class RVIZ_COMMON_PUBLIC MarkerBase
 {
 public:
   using Marker = visualization_msgs::msg::Marker;

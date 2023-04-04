@@ -38,7 +38,7 @@
 #include "rviz_common/message_filter_display.hpp"
 #include "rviz_common/interaction/forwards.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_rendering
 {
@@ -67,7 +67,7 @@ class PoseDisplaySelectionHandler;
 typedef std::shared_ptr<PoseDisplaySelectionHandler> PoseDisplaySelectionHandlerPtr;
 
 /** @brief Accumulates and displays the pose from a geometry_msgs::PoseStamped message. */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC PoseDisplay : public
+class RVIZ_COMMON_PUBLIC PoseDisplay : public
   rviz_common::MessageFilterDisplay<geometry_msgs::msg::PoseStamped>
 {
   Q_OBJECT

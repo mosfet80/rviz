@@ -41,7 +41,7 @@
 #include "rviz_common/transformation/frame_transformer.hpp"
 #include "rviz_common/transformation/transformation_manager.hpp"
 #include "rviz_default_plugins/transformation/tf_wrapper.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
@@ -54,7 +54,7 @@ namespace transformation
  * together (i.e. a Q_OBJECT may not be a template class).
  * Not intended to be used directly, use TransformerGuard instead.
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC _TransformerGuard : public QObject
+class RVIZ_COMMON_PUBLIC _TransformerGuard : public QObject
 {
   Q_OBJECT
 

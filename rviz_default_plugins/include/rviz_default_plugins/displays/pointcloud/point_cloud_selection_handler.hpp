@@ -42,7 +42,7 @@
 # include "rviz_common/interaction/selection_manager.hpp"
 # include "rviz_common/properties/color_property.hpp"
 # include "rviz_rendering/objects/point_cloud.hpp"
-# include "rviz_default_plugins/visibility_control.hpp"
+# include "rviz_common/visibility_control.hpp"
 #endif
 
 namespace rviz_default_plugins
@@ -61,7 +61,7 @@ struct IndexAndMessage
   uint64_t message;
 };
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC PointCloudSelectionHandler : public
+class RVIZ_COMMON_PUBLIC PointCloudSelectionHandler : public
   rviz_common::interaction::SelectionHandler
 {
 public:

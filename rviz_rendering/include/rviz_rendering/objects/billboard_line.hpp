@@ -39,6 +39,7 @@
 #include <OgreColourValue.h>
 #include <OgreMaterial.h>
 #include <OgreSharedPtr.h>
+#include <functional>
 
 #include "rviz_rendering/objects/object.hpp"
 #include "rviz_rendering/visibility_control.hpp"

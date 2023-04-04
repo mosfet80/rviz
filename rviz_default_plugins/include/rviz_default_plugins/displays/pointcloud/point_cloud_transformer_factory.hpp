@@ -39,12 +39,12 @@
 #include "rviz_common/factory/pluginlib_factory.hpp"
 
 #include "rviz_default_plugins/displays/pointcloud/point_cloud_transformer.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC PointCloudTransformerFactory : public
+class RVIZ_COMMON_PUBLIC PointCloudTransformerFactory : public
   rviz_common::PluginlibFactory<PointCloudTransformer>
 {
 public:

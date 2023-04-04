@@ -35,7 +35,7 @@
 #include "rviz_common/tool.hpp"
 #include "rviz_common/viewport_mouse_event.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
@@ -44,7 +44,7 @@ namespace tools
 
 //! The Focus Tool allows the user to set the focal point of the current
 //! view controller with a single mouse click.
-class RVIZ_DEFAULT_PLUGINS_PUBLIC FocusTool : public rviz_common::Tool
+class RVIZ_COMMON_PUBLIC FocusTool : public rviz_common::Tool
 {
 public:
   FocusTool();

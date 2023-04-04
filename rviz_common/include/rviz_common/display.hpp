@@ -31,16 +31,12 @@
 #ifndef RVIZ_COMMON__DISPLAY_HPP_
 #define RVIZ_COMMON__DISPLAY_HPP_
 
-#include <string>
-
-#include <QIcon>  // NOLINT: cpplint is unable to handle the include order here
-#include <QSet>  // NOLINT: cpplint is unable to handle the include order here
-
-#include "rclcpp/time.hpp"
 
 #include "rviz_common/properties/bool_property.hpp"
 #include "rviz_common/properties/status_property.hpp"
 #include "rviz_common/visibility_control.hpp"
+#include "rclcpp/time.hpp"
+
 
 class QDockWidget;
 class QWidget;

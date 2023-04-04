@@ -54,7 +54,7 @@
 
 #include "rviz_default_plugins/robot/robot_element_base_class.hpp"
 #include "rviz_default_plugins/robot/robot_link.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -90,7 +90,7 @@ class Robot;
  * \struct RobotJoint
  * \brief Contains any data we need from a joint in the robot.
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC RobotJoint : public RobotElementBaseClass
+class RVIZ_COMMON_PUBLIC RobotJoint : public RobotElementBaseClass
 {
   Q_OBJECT
 

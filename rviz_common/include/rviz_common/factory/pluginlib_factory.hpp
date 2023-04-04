@@ -31,8 +31,6 @@
 #ifndef RVIZ_COMMON__FACTORY__PLUGINLIB_FACTORY_HPP_
 #define RVIZ_COMMON__FACTORY__PLUGINLIB_FACTORY_HPP_
 
-#include <string>
-#include <vector>
 
 #include <QHash>  // NOLINT
 #include <QString>  // NOLINT

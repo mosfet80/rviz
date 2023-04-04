@@ -30,11 +30,11 @@
 
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__MAP__MAP_DISPLAY_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__MAP__MAP_DISPLAY_HPP_
-
+/*
 #include <memory>
 #include <string>
 #include <vector>
-
+*/
 #ifndef Q_MOC_RUN
 
 #include <OgreTexture.h>
@@ -53,7 +53,7 @@
 #include "rviz_common/message_filter_display.hpp"
 
 #include "rviz_default_plugins/displays/map/swatch.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -86,7 +86,7 @@ class AlphaSetter;
  * \class MapDisplay
  * \brief Displays a map along the XY plane.
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC MapDisplay : public
+class RVIZ_COMMON_PUBLIC MapDisplay : public
   rviz_common::MessageFilterDisplay<nav_msgs::msg::OccupancyGrid>
 {
   Q_OBJECT

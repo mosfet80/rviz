@@ -32,12 +32,8 @@
 #ifndef RVIZ_COMMON__TRANSFORMATION__TRANSFORMATION_MANAGER_HPP_
 #define RVIZ_COMMON__TRANSFORMATION__TRANSFORMATION_MANAGER_HPP_
 
-#include <memory>
-#include <string>
-#include <vector>
-
 #include <QObject>  // NOLINT
-#include <QString>  // NOLINT
+
 
 #include "rviz_common/config.hpp"
 #include "rviz_common/factory/factory.hpp"

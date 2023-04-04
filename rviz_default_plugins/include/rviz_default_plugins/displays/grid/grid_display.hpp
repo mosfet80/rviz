@@ -40,7 +40,7 @@
 #include "rviz_common/properties/int_property.hpp"
 #include "rviz_common/properties/tf_frame_property.hpp"
 #include "rviz_common/properties/vector_property.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_rendering
 {
@@ -60,7 +60,7 @@ namespace displays
  *
  * For more information see Grid
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC GridDisplay : public rviz_common::Display
+class RVIZ_COMMON_PUBLIC GridDisplay : public rviz_common::Display
 {
   Q_OBJECT
 

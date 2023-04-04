@@ -32,11 +32,6 @@
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__CAMERA__CAMERA_DISPLAY_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__CAMERA__CAMERA_DISPLAY_HPP_
 
-#include <cstdint>
-#include <memory>
-#include <mutex>
-#include <string>
-
 #include <QObject>  // NOLINT: cpplint cannot handle the include order here
 
 #ifndef Q_MOC_RUN
@@ -51,7 +46,7 @@
 
 # include "rviz_default_plugins/displays/image/image_transport_display.hpp"
 # include "rviz_default_plugins/displays/image/ros_image_texture_iface.hpp"
-# include "rviz_default_plugins/visibility_control.hpp"
+# include "rviz_common/visibility_control.hpp"
 # include "rviz_rendering/render_window.hpp"
 
 #endif
@@ -97,7 +92,7 @@ struct ImageDimensions
  * \class CameraDisplay
  *
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC CameraDisplay
+class RVIZ_COMMON_PUBLIC CameraDisplay
   : public rviz_default_plugins::displays::ImageTransportDisplay<sensor_msgs::msg::Image>,
   public Ogre::RenderTargetListener
 {

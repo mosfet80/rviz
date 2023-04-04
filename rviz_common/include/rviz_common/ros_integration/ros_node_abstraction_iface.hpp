@@ -30,12 +30,12 @@
 
 #ifndef RVIZ_COMMON__ROS_INTEGRATION__ROS_NODE_ABSTRACTION_IFACE_HPP_
 #define RVIZ_COMMON__ROS_INTEGRATION__ROS_NODE_ABSTRACTION_IFACE_HPP_
-
+/*
 #include <map>
 #include <memory>
 #include <string>
 #include <vector>
-
+*/
 #include "rclcpp/rclcpp.hpp"
 
 namespace rviz_common

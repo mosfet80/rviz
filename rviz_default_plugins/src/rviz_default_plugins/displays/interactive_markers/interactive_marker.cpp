@@ -41,7 +41,6 @@
 #include <OgreSceneManager.h>
 #include <OgreMaterialManager.h>
 #include <OgreResourceGroupManager.h>
-#include <OgreSubEntity.h>
 #include <OgreMath.h>
 #include <OgreRenderWindow.h>
 

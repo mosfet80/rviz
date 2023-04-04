@@ -3,6 +3,9 @@ cmake_minimum_required(VERSION 3.10)
 project(rviz_ogre_vendor)
 
 find_package(ament_cmake REQUIRED)
+find_package(OGRE REQUIRED CONFIG)
+
+include_directories(${SDL2_INCLUDE_DIRS})
 
 set(PACKAGE_VERSION "1.0.0")
 
@@ -43,9 +46,9 @@ macro(build_freetype)
   list(APPEND extra_cmake_args "-DCMAKE_CXX_FLAGS=${FREETYPE_CXX_FLAGS}")
 
   include(ExternalProject)
-  ExternalProject_Add(freetype-2.8.1
-    URL https://git.savannah.gnu.org/cgit/freetype/freetype2.git/snapshot/freetype2-VER-2-6-5.tar.gz
-    URL_MD5 0dd62a0125895431e074a3df29f94d69
+  ExternalProject_Add(freetype-2.13.0
+    URL https://git.savannah.gnu.org/cgit/freetype/freetype2.git/snapshot/freetype2-VER-2-13-0.tar.gz
+    URL_MD5 e810e6f2d84f7c2608bcfd6e723cd98a
     TIMEOUT 600
     LOG_CONFIGURE ${should_log}
     LOG_BUILD ${should_log}
@@ -86,9 +89,9 @@ macro(build_zlib)
   list(APPEND extra_cmake_args "-DCMAKE_CXX_FLAGS=${ZLIB_CXX_FLAGS}")
 
   include(ExternalProject)
-  ExternalProject_Add(zlib-1.2.11
-    URL https://www.zlib.net/fossils/zlib-1.2.11.tar.gz
-    URL_MD5 1c9f62f0778697a09d36121ead88e08e
+  ExternalProject_Add(freetype-2.13.0
+    URL https://git.savannah.gnu.org/cgit/freetype/freetype2.git/snapshot/freetype2-VER-2-13-0.tar.gz
+    URL_MD5 e810e6f2d84f7c2608bcfd6e723cd98a
     TIMEOUT 600
     LOG_CONFIGURE ${should_log}
     LOG_BUILD ${should_log}
@@ -203,10 +206,10 @@ macro(build_ogre)
   )
 
   if(BUILDING_FREETYPE_LOCALLY)
-    add_dependencies(ogre-v1.12.10 freetype-2.8.1)
+    add_dependencies(ogre-v1.12.10 freetype-2.13.0)
   endif()
   if(BUILDING_ZLIB_LOCALLY)
-    add_dependencies(ogre-v1.12.10 zlib-1.2.11)
+    add_dependencies(ogre-v1.12.10 zlib-1.2.13)
   endif()
 
   # The external project will install to the build folder, but we'll install that on make install.
@@ -226,7 +229,16 @@ if(BUILDING_ZLIB_LOCALLY)
   build_zlib()
 endif()
 
-build_ogre()
+if(OGRE_VERSION VERSION_GREATER "1.12.10")
+   if(UNIX)
+      set(CMAKE_BUILD_WITH_INSTALL_RPATH TRUE)
+      include_directories(${OGRE_INCLUDE_DIRS}/RenderSystems/glad)
+      set(CMAKE_INSTALL_RPATH ${CMAKE_BINARY_DIR}/lib ${OGRE_LIBRARY_DIRS} )
+   endif(UNIX)
+else()
+   build_ogre()
+endif()
+
 
 if(WIN32)
   ament_environment_hooks(env_hook/rviz_ogre_vendor_library_path.bat)

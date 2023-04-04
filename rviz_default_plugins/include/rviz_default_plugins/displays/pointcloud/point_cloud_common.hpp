@@ -62,7 +62,7 @@
 #include "rviz_default_plugins/displays/pointcloud/point_cloud_selection_handler.hpp"
 #include "rviz_default_plugins/displays/pointcloud/point_cloud_transformer.hpp"
 #include "rviz_default_plugins/displays/pointcloud/point_cloud_transformer_factory.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 #endif
 
@@ -92,7 +92,7 @@ typedef std::shared_ptr<PointCloudTransformer> PointCloudTransformerPtr;
 
 typedef std::vector<std::string> V_string;
 
-struct RVIZ_DEFAULT_PLUGINS_PUBLIC CloudInfo
+struct RVIZ_COMMON_PUBLIC CloudInfo
 {
   CloudInfo();
   ~CloudInfo();
@@ -127,7 +127,7 @@ struct RVIZ_DEFAULT_PLUGINS_PUBLIC CloudInfo
  * If you set the channel's name to "rgb", it will interpret the channel as an integer rgb value, with r, g and b
  * all being 8 bits.
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC PointCloudCommon : public QObject
+class RVIZ_COMMON_PUBLIC PointCloudCommon : public QObject
 {
   Q_OBJECT
 

@@ -38,7 +38,7 @@
 #include "rclcpp/qos.hpp"
 
 #include "rviz_default_plugins/tools/pose/pose_tool.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_common
 {
@@ -54,7 +54,7 @@ namespace rviz_default_plugins
 {
 namespace tools
 {
-class RVIZ_DEFAULT_PLUGINS_PUBLIC GoalTool : public PoseTool
+class RVIZ_COMMON_PUBLIC GoalTool : public PoseTool
 {
   Q_OBJECT
 

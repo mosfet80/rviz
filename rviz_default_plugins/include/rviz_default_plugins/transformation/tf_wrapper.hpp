@@ -40,7 +40,7 @@
 #include "tf2_geometry_msgs/tf2_geometry_msgs.hpp"
 
 #include "rviz_common/transformation/frame_transformer.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
@@ -50,26 +50,26 @@ class TFWrapper
   : public rviz_common::transformation::TransformationLibraryConnector
 {
 public:
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   TFWrapper();
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   ~TFWrapper() override = default;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   void transform(
     const geometry_msgs::msg::PoseStamped & pose_in,
     geometry_msgs::msg::PoseStamped & pose_out,
     const std::string & frame);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   geometry_msgs::msg::TransformStamped
   lookupTransform(
     const std::string & target_frame,
     const std::string & source_frame,
     const tf2::TimePoint & time);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   geometry_msgs::msg::TransformStamped
   lookupTransform(
     const std::string & target_frame,
@@ -78,7 +78,7 @@ public:
     const tf2::TimePoint & source_time,
     const std::string & fixed_frame);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   bool
   canTransform(
     const std::string & target_frame,
@@ -86,7 +86,7 @@ public:
     tf2::TimePoint time,
     std::string & error);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   bool
   canTransform(
     const std::string & target_frame,
@@ -96,7 +96,7 @@ public:
     const std::string & fixed_frame,
     std::string & error);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   tf2_ros::TransformStampedFuture
   waitForTransform(
     const std::string & target_frame,
@@ -105,35 +105,35 @@ public:
     const tf2::Duration & timeout,
     tf2_ros::TransformReadyCallback callback);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   void
   cancel(
     const tf2_ros::TransformStampedFuture & ts_future);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   std::vector<std::string>
   getFrameStrings();
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   std::shared_ptr<tf2_ros::Buffer>
   getBuffer();
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   bool
   frameExists(const std::string & frame);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   void
   initialize(
     rclcpp::Clock::SharedPtr clock,
     rviz_common::ros_integration::RosNodeAbstractionIface::WeakPtr rviz_ros_node,
     bool using_dedicated_thread);
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   void
   clear();
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   void
   initializeBuffer(
     rclcpp::Clock::SharedPtr clock,

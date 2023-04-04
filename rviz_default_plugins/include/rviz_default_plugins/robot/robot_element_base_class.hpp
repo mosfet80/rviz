@@ -48,7 +48,7 @@
 #include "rviz_rendering/objects/object.hpp"
 #include "rviz_common/interaction/forwards.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -79,7 +79,7 @@ namespace robot
 
 class Robot;
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC RobotElementBaseClass : public QObject
+class RVIZ_COMMON_PUBLIC RobotElementBaseClass : public QObject
 {
   Q_OBJECT
 

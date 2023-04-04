@@ -47,7 +47,7 @@ namespace displays
  * \class FluidPressureDisplay
  */
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC FluidPressureDisplay
+class RVIZ_COMMON_PUBLIC FluidPressureDisplay
   : public PointCloudScalarDisplay<sensor_msgs::msg::FluidPressure>
 {
   Q_OBJECT

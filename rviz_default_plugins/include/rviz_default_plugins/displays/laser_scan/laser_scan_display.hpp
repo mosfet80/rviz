@@ -32,8 +32,6 @@
 
 #include <memory>
 
-#include <QObject>  //NOLINT
-
 #include "sensor_msgs/msg/laser_scan.hpp"
 
 #include "laser_geometry/laser_geometry.hpp"
@@ -45,7 +43,9 @@
 #include "rviz_default_plugins/transformation/transformer_guard.hpp"
 #include "rviz_default_plugins/transformation/tf_wrapper.hpp"
 #include "rviz_default_plugins/transformation/tf_frame_transformer.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
+
+#include <QObject>  //NOLINT
 
 namespace rviz_common
 {
@@ -60,7 +60,7 @@ namespace rviz_default_plugins
 namespace displays
 {
 /** @brief Visualizes a laser scan, received as a sensor_msgs::LaserScan. */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC LaserScanDisplay : public
+class RVIZ_COMMON_PUBLIC LaserScanDisplay : public
   rviz_common::MessageFilterDisplay<sensor_msgs::msg::LaserScan>
 {
   Q_OBJECT

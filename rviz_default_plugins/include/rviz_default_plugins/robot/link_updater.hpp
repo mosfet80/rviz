@@ -36,7 +36,7 @@
 
 #include "rviz_common/properties/status_property.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -49,7 +49,7 @@ namespace robot
 {
 using rviz_common::properties::StatusLevel;
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC LinkUpdater
+class RVIZ_COMMON_PUBLIC_TYPE LinkUpdater
 {
 public:
   virtual ~LinkUpdater() {}

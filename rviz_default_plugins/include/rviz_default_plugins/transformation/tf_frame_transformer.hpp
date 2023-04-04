@@ -41,7 +41,7 @@
 #include "rviz_common/ros_integration/ros_node_abstraction.hpp"
 #include "rviz_default_plugins/transformation/tf_wrapper.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
@@ -50,39 +50,39 @@ namespace transformation
 class TFFrameTransformer : public rviz_common::transformation::FrameTransformer
 {
 public:
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   TFFrameTransformer();
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   explicit TFFrameTransformer(std::shared_ptr<TFWrapper> wrapper);
 
   ~TFFrameTransformer() override = default;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   void
   initialize(
     rviz_common::ros_integration::RosNodeAbstractionIface::WeakPtr rviz_ros_node,
     rclcpp::Clock::SharedPtr clock) override;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   void
   clear() override;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   std::vector<std::string>
   getAllFrameNames() const override;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   geometry_msgs::msg::PoseStamped
   transform(
     const geometry_msgs::msg::PoseStamped & pose_in,
     const std::string & target_frame) override;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   bool
   frameHasProblems(const std::string & frame, std::string & error) const override;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+  RVIZ_COMMON_PUBLIC
   rviz_common::transformation::TransformationLibraryConnector::WeakPtr
   getConnector() override;
 

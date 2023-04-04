@@ -47,7 +47,7 @@ namespace displays
  * \class TemperatureDisplay
  */
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC TemperatureDisplay
+class RVIZ_COMMON_PUBLIC TemperatureDisplay
   : public PointCloudScalarDisplay<sensor_msgs::msg::Temperature>
 {
   Q_OBJECT

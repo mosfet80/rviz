@@ -31,15 +31,14 @@
 #ifndef RVIZ_COMMON__PROPERTIES__PROPERTY_HPP_
 #define RVIZ_COMMON__PROPERTIES__PROPERTY_HPP_
 
-#include <string>
+
+
+#include "rviz_common/config.hpp"
 
 #include <QIcon>  // NOLINT: cpplint is unable to handle the include order here
 #include <QObject>  // NOLINT: cpplint is unable to handle the include order here
 #include <QString>  // NOLINT: cpplint is unable to handle the include order here
 #include <QVariant>  // NOLINT: cpplint is unable to handle the include order here
-
-#include "rviz_common/config.hpp"
-#include "rviz_common/visibility_control.hpp"
 
 class QPainter;
 class QStyleOptionViewItem;

@@ -35,7 +35,7 @@
 
 #include "rviz_common/message_filter_display.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -60,7 +60,7 @@ namespace displays
  * \class PolygonDisplay
  * \brief Displays a geometry_msgs::PolygonStamped message
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC PolygonDisplay : public
+class RVIZ_COMMON_PUBLIC PolygonDisplay : public
   rviz_common::MessageFilterDisplay<geometry_msgs::msg::PolygonStamped>
 {
   Q_OBJECT

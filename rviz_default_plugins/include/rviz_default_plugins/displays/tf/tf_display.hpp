@@ -50,7 +50,7 @@
 
 #include "rviz_default_plugins/transformation/transformer_guard.hpp"
 #include "rviz_default_plugins/transformation/tf_frame_transformer.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -90,7 +90,7 @@ typedef std::shared_ptr<FrameSelectionHandler> FrameSelectionHandlerPtr;
 typedef std::set<FrameInfo *> S_FrameInfo;
 
 /** @brief Displays a visual representation of the TF hierarchy. */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC TFDisplay : public rviz_common::Display
+class RVIZ_COMMON_PUBLIC TFDisplay : public rviz_common::Display
 {
   Q_OBJECT
 

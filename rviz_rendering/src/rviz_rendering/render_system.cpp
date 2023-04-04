@@ -249,8 +249,15 @@ RenderSystem::detectGlVersion()
     gl_version_ = force_gl_version_;
   } else {
     Ogre::RenderSystem * renderSys = ogre_root_->getRenderSystem();
+
+#if (OGRE_VERSION >= ((1 << 16) | (12 << 8) | 0))
+//<=ogre 1.12
+#else
+//ogre>1.12
     // createRenderSystemCapabilities() called for side effects only
     std::unique_ptr<Ogre::RenderSystemCapabilities>(renderSys->createRenderSystemCapabilities());
+#endif
+
     const Ogre::RenderSystemCapabilities * caps = renderSys->getCapabilities();
     int major = caps->getDriverVersion().major;
     int minor = caps->getDriverVersion().minor;

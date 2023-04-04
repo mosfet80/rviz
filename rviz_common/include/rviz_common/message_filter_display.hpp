@@ -37,6 +37,8 @@
 
 #include "rviz_common/ros_topic_display.hpp"
 #include "rviz_common/properties/int_property.hpp"
+#include "rviz_common/properties/ros_topic_property.hpp"
+
 
 namespace rviz_common
 {

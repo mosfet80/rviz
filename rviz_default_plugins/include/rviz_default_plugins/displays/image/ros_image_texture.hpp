@@ -33,18 +33,19 @@
 #include "rviz_default_plugins/displays/image/ros_image_texture_iface.hpp"
 
 #include <deque>
+/*
 #include <memory>
 #include <mutex>
 #include <stdexcept>
 #include <string>
 #include <vector>
-
+*/
 #include <OgreTexture.h>
 #include <OgreImage.h>
 #include <OgreSharedPtr.h>
 
 #include "sensor_msgs/msg/image.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 
 namespace rviz_default_plugins
@@ -73,41 +74,41 @@ struct ImageData
 class ROSImageTexture : public ROSImageTextureIface
 {
 public:
-  RVIZ_DEFAULT_PLUGINS_PUBLIC ROSImageTexture();
-  RVIZ_DEFAULT_PLUGINS_PUBLIC ~ROSImageTexture() override;
+	RVIZ_COMMON_PUBLIC ROSImageTexture();
+	RVIZ_COMMON_PUBLIC ~ROSImageTexture() override;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   void addMessage(sensor_msgs::msg::Image::ConstSharedPtr image) override;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   bool update() override;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   void clear() override;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   const Ogre::String getName() override {return texture_->getName();}
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   const Ogre::TexturePtr & getTexture() override {return texture_;}
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   const sensor_msgs::msg::Image::ConstSharedPtr getImage() override;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   uint32_t getWidth() override {return width_;}
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   uint32_t getHeight() override {return height_;}
 
   // automatic range normalization
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   void setNormalizeFloatImage(bool normalize) override;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   void setNormalizeFloatImage(bool normalize, double min, double max) override;
 
-  RVIZ_DEFAULT_PLUGINS_PUBLIC
+	RVIZ_COMMON_PUBLIC
   void setMedianFrames(unsigned median_frames) override;
 
 private:

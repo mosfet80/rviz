@@ -43,7 +43,7 @@
 
 #include "rviz_common/tool.hpp"
 #include "rviz_rendering/viewport_projection_finder.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_rendering
 {
@@ -54,7 +54,7 @@ namespace rviz_default_plugins
 {
 namespace tools
 {
-class RVIZ_DEFAULT_PLUGINS_PUBLIC PoseTool : public rviz_common::Tool
+class RVIZ_COMMON_PUBLIC PoseTool : public rviz_common::Tool
 {
 public:
   PoseTool();

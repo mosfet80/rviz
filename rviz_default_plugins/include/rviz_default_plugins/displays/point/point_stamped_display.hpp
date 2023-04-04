@@ -45,7 +45,7 @@
 
 #include "rviz_common/message_filter_display.hpp"
 
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace Ogre
 {
@@ -74,7 +74,7 @@ namespace rviz_default_plugins
 namespace displays
 {
 
-class RVIZ_DEFAULT_PLUGINS_PUBLIC PointStampedDisplay
+class RVIZ_COMMON_PUBLIC PointStampedDisplay
   : public rviz_common::MessageFilterDisplay<geometry_msgs::msg::PointStamped>
 {
   Q_OBJECT

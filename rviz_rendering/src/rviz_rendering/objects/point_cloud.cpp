@@ -643,8 +643,8 @@ size_t PointCloud::removePointsFromRenderables(
     PointCloudRenderablePtr rend = renderables_.front();
     Ogre::RenderOperation * op = rend->getRenderOperation();
 
-    size_t popped_in_renderable = std::min(
-      static_cast<size_t>(number_of_points * vertices_per_point - popped_count),
+    size_t popped_in_renderable = std::min<size_t>(
+      (number_of_points * vertices_per_point - popped_count),
       op->vertexData->vertexCount);
     op->vertexData->vertexStart += popped_in_renderable;
     op->vertexData->vertexCount -= popped_in_renderable;

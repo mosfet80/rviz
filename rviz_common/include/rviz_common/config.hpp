@@ -31,15 +31,11 @@
 #ifndef RVIZ_COMMON__CONFIG_HPP_
 #define RVIZ_COMMON__CONFIG_HPP_
 
-#include <algorithm>
-#include <cstdio>
-#include <memory>
-#include <string>
 
+#include <memory>
 #include <QMap>  // NOLINT: cpplint is unable to handle the include order here
 #include <QString>  // NOLINT: cpplint is unable to handle the include order here
 #include <QVariant>  // NOLINT: cpplint is unable to handle the include order here
-
 #include "rviz_common/visibility_control.hpp"
 
 namespace rviz_common

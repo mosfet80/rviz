@@ -38,7 +38,7 @@
 #include "rviz_common/ros_topic_display.hpp"
 
 #include "rviz_default_plugins/displays/marker/marker_common.hpp"
-#include "rviz_default_plugins/visibility_control.hpp"
+#include "rviz_common/visibility_control.hpp"
 
 namespace rviz_default_plugins
 {
@@ -52,7 +52,7 @@ namespace displays
  * Marker arrays come in as visualization_msgs::msg::MarkerArray messages.
  * See the Marker message for more information.
  */
-class RVIZ_DEFAULT_PLUGINS_PUBLIC MarkerArrayDisplay
+class RVIZ_COMMON_PUBLIC MarkerArrayDisplay
   : public rviz_common::RosTopicDisplay<visualization_msgs::msg::MarkerArray>
 {
 public:
