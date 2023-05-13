@@ -42,7 +42,7 @@ find_package(resource_retriever REQUIRED)
 # TODO(wjwwood): this block is to setup the windeployqt tool, could be removed later.
 if(Qt5_FOUND AND WIN32 AND TARGET Qt5::qmake AND NOT TARGET Qt5::windeployqt)
   get_target_property(_qt5_qmake_location Qt5::qmake IMPORTED_LOCATION)
-
+  define(_SILENCE_CXX17_NEGATORS_DEPRECATION_WARNING)
   execute_process(
     COMMAND "${_qt5_qmake_location}" -query QT_INSTALL_PREFIX
     RESULT_VARIABLE return_code
