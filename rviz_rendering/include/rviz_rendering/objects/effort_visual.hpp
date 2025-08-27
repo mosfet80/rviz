@@ -32,7 +32,6 @@
 #define RVIZ_RENDERING__OBJECTS__EFFORT_VISUAL_HPP_
 
 #include <map>
-#include <memory>
 #include <string>
 
 #include <OgreSceneNode.h>

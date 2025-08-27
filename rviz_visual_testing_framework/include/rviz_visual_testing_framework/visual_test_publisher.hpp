@@ -31,7 +31,6 @@
 #define RVIZ_VISUAL_TESTING_FRAMEWORK__VISUAL_TEST_PUBLISHER_HPP_
 
 #include <chrono>
-#include <memory>
 #include <string>
 #include <thread>
 #include <vector>

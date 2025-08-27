@@ -32,8 +32,6 @@
 #ifndef RVIZ_COMMON__TOOL_MANAGER_HPP_
 #define RVIZ_COMMON__TOOL_MANAGER_HPP_
 
-#include <map>
-#include <memory>
 
 #include <QList>  // NOLINT: cpplint is unable to handle the include order here
 #include <QObject>  // NOLINT: cpplint is unable to handle the include order here

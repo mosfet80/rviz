@@ -33,7 +33,6 @@
 #define RVIZ_COMMON__PROPERTIES__COVARIANCE_PROPERTY_HPP_
 
 #include <deque>
-#include <memory>
 
 #include <OgreColourValue.h>
 

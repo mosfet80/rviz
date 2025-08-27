@@ -31,8 +31,6 @@
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__AXES__AXES_DISPLAY_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__AXES__AXES_DISPLAY_HPP_
 
-#include <memory>
-
 #include "rviz_common/display.hpp"
 
 namespace rviz_rendering

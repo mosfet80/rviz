@@ -32,8 +32,6 @@
 #ifndef RVIZ_COMMON__PROPERTIES__STRING_PROPERTY_HPP_
 #define RVIZ_COMMON__PROPERTIES__STRING_PROPERTY_HPP_
 
-#include <string>
-
 #include <QString>  // NOLINT: cpplint is unable to handle the include order here
 
 #include "rviz_common/properties/property.hpp"

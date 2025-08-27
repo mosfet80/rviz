@@ -31,10 +31,7 @@
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__INTERACTIVE_MARKERS__INTERACTIVE_MARKER_DISPLAY_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__INTERACTIVE_MARKERS__INTERACTIVE_MARKER_DISPLAY_HPP_
 
-#include <map>
-#include <memory>
 #include <string>
-#include <vector>
 
 #include <QString>  // NOLINT: cpplint is unable to handle the include order here
 

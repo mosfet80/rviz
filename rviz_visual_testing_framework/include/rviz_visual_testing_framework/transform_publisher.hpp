@@ -30,7 +30,6 @@
 #ifndef RVIZ_VISUAL_TESTING_FRAMEWORK__TRANSFORM_PUBLISHER_HPP_
 #define RVIZ_VISUAL_TESTING_FRAMEWORK__TRANSFORM_PUBLISHER_HPP_
 
-#include <memory>
 #include <string>
 #include <thread>
 #include <vector>

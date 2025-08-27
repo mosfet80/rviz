@@ -32,16 +32,11 @@
 #ifndef RVIZ_COMMON__RENDER_PANEL_HPP_
 #define RVIZ_COMMON__RENDER_PANEL_HPP_
 
-#include <map>
-#include <memory>
-#include <mutex>
-#include <vector>
-
 #include <OgreVector.h>
-
 #include <QWidget>  // NOLINT: cpplint is unable to handle the include order here
 
 #include "rviz_common/visibility_control.hpp"
+#include <mutex>
 
 class QGridLayout;
 class QMenu;

@@ -44,7 +44,6 @@
 #include "rviz_common/properties/float_property.hpp"
 #include "rviz_common/properties/tf_frame_property.hpp"
 
-
 namespace rviz_default_plugins
 {
 namespace displays

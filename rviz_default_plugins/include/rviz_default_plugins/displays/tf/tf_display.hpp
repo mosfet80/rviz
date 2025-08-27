@@ -32,11 +32,9 @@
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__TF__TF_DISPLAY_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__TF__TF_DISPLAY_HPP_
 
-#include <map>
 #include <memory>
 #include <set>
-#include <string>
-#include <vector>
+
 
 #include <OgreQuaternion.h>
 #include <OgreVector.h>

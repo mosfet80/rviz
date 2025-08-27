@@ -31,14 +31,7 @@
 
 #include "rviz_default_plugins/displays/tf/tf_display.hpp"
 
-#include <algorithm>
 #include <cassert>
-#include <memory>
-#include <regex>
-#include <set>
-#include <string>
-#include <vector>
-#include <utility>
 
 #include <OgreSceneNode.h>
 #include <OgreSceneManager.h>

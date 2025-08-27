@@ -32,11 +32,6 @@
 #include "rviz_default_plugins/robot/robot_link.hpp"
 
 #define _USE_MATH_DEFINES
-#include <cmath>
-#include <map>
-#include <memory>
-#include <string>
-#include <vector>
 
 #include <OgreEntity.h>
 #include <OgreMaterial.h>

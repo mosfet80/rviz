@@ -33,8 +33,8 @@
 #include <memory>
 #include <vector>
 
-#include <Ogre.h>  // NOLINT
-
+#include <OgreTexture.h>
+#include <OgreImage.h>
 #include "sensor_msgs/image_encodings.hpp"
 
 #include "../../ogre_testing_environment.hpp"

@@ -32,8 +32,6 @@
 #ifndef RVIZ_COMMON__VISUALIZER_APP_HPP_
 #define RVIZ_COMMON__VISUALIZER_APP_HPP_
 
-#include <memory>
-
 #include <QApplication>  // NOLINT: cpplint is unable to handle the include order here
 #include <QObject>  // NOLINT: cpplint is unable to handle the include order here
 #include <QString>  // NOLINT: cpplint is unable to handle the include order here

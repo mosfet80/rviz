@@ -32,9 +32,7 @@
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__EFFORT__EFFORT_DISPLAY_HPP_
 
 
-#include <deque>
-#include <map>
-#include <memory>
+
 #include <string>
 
 #include <rclcpp/rclcpp.hpp>

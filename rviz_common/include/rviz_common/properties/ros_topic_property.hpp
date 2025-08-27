@@ -30,8 +30,6 @@
 #ifndef RVIZ_COMMON__PROPERTIES__ROS_TOPIC_PROPERTY_HPP_
 #define RVIZ_COMMON__PROPERTIES__ROS_TOPIC_PROPERTY_HPP_
 
-#include <string>
-
 #include <QRegularExpression>  // NOLINT: cpplint is unable to handle the include order here
 #include <QString>  // NOLINT: cpplint is unable to handle the include order here
 

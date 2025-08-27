@@ -32,8 +32,6 @@
 #ifndef RVIZ_COMMON__PROPERTIES__ENUM_PROPERTY_HPP_
 #define RVIZ_COMMON__PROPERTIES__ENUM_PROPERTY_HPP_
 
-#include <string>
-
 #include <QString>  // NOLINT: cpplint is unable to handle the include order here
 #include <QStringList>  // NOLINT: cpplint is unable to handle the include order here
 

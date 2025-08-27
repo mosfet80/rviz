@@ -32,13 +32,8 @@
 #ifndef RVIZ_COMMON__INTERACTION__SELECTION_HANDLER_HPP_
 #define RVIZ_COMMON__INTERACTION__SELECTION_HANDLER_HPP_
 
-#include <map>
 #include <memory>
-#include <set>
-#include <string>
-#include <unordered_map>
-#include <utility>
-#include <vector>
+
 
 #include <OgreMovableObject.h>
 

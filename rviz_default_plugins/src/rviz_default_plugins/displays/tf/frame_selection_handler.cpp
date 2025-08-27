@@ -30,7 +30,6 @@
 
 #include "rviz_default_plugins/displays/tf/frame_selection_handler.hpp"
 
-#include <string>
 
 #include <QString>  // NOLINT: cpplint is unable to handle the include order here
 

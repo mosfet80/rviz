@@ -33,12 +33,6 @@
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__INTERACTIVE_MARKERS__INTERACTIVE_MARKER_HPP_
 
 #ifndef Q_MOC_RUN
-#include <map>
-#include <memory>
-#include <mutex>
-#include <string>
-#include <thread>
-#include <vector>
 
 #include <OgreVector.h>
 #include <OgreQuaternion.h>

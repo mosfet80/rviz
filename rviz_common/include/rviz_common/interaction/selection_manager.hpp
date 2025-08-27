@@ -35,10 +35,6 @@
 
 #include "selection_manager_iface.hpp"
 
-#include <array>
-#include <memory>
-#include <mutex>
-#include <utility>
 
 #include <OgreMaterialManager.h>
 #include <OgreRenderQueueListener.h>

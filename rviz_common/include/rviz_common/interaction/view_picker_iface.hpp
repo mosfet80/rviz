@@ -32,8 +32,6 @@
 #ifndef RVIZ_COMMON__INTERACTION__VIEW_PICKER_IFACE_HPP_
 #define RVIZ_COMMON__INTERACTION__VIEW_PICKER_IFACE_HPP_
 
-#include <vector>
-
 #include <OgreVector.h>
 
 #include "rviz_common/visibility_control.hpp"

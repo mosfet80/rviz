@@ -31,8 +31,6 @@
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__SCREW__SCREW_DISPLAY_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__SCREW__SCREW_DISPLAY_HPP_
 
-#include <deque>
-#include <memory>
 
 #include <geometry_msgs/msg/vector3.hpp>
 #include <rviz_common/message_filter_display.hpp>

@@ -32,13 +32,11 @@
 #ifndef RVIZ_COMMON__YAML_CONFIG_READER_HPP_
 #define RVIZ_COMMON__YAML_CONFIG_READER_HPP_
 
-#include <istream>
 
 #include <QString>  // NOLINT: cpplint is unable to handle the include order here
 
 #include "rviz_common/config.hpp"
 #include "rviz_common/visibility_control.hpp"
-
 #include "yaml-cpp/yaml.h"
 
 namespace rviz_common

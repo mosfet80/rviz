@@ -32,9 +32,9 @@
 #ifndef RVIZ_COMMON__BIT_ALLOCATOR_HPP_
 #define RVIZ_COMMON__BIT_ALLOCATOR_HPP_
 
-#include <cstdint>
 
 #include "rviz_common/visibility_control.hpp"
+#include <cstdint>
 
 namespace rviz_common
 {

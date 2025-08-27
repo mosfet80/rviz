@@ -53,9 +53,8 @@
 #ifndef RVIZ_COMMON__LOGGING_HPP_
 #define RVIZ_COMMON__LOGGING_HPP_
 
-#include <memory>
-#include <sstream>
 #include <string>
+#include <sstream>
 
 #include "rviz_rendering/logging_handler.hpp"
 #include "rviz_common/visibility_control.hpp"

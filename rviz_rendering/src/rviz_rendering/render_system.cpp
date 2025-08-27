@@ -42,6 +42,7 @@
 #include <OgreRenderWindow.h>
 #include <OgreLogManager.h>
 #include <OgreMeshManager.h>
+#include <iostream>
 
 #include <QString>  // NOLINT: cpplint is unable to handle the include order here
 
@@ -164,7 +165,6 @@ RenderSystem::RenderSystem()
   this->ogre_logging->configureLogging();
 
   setResourceDirectory();
-  setPluginDirectory();
   setupDummyWindowId();
   ogre_root_ = new Ogre::Root(get_resource_directory() + "/ogre_media/plugins.cfg");
   ogre_overlay_system_ = new Ogre::OverlaySystem();
@@ -236,7 +236,7 @@ RenderSystem::loadOgrePlugins()
 
 void
 RenderSystem::detectGlVersion()
-{
+{/*
   if (force_gl_version_) {
     gl_version_ = force_gl_version_;
   } else {
@@ -275,7 +275,7 @@ RenderSystem::detectGlVersion()
   }
   RVIZ_RENDERING_LOG_INFO_STREAM(
     "OpenGl version: " << gl_version_ / 100.0 << " (GLSL " << glsl_version_ / 100.0 << ")"
-  );
+  );*/
 }
 
 void

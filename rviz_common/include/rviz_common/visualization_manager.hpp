@@ -33,7 +33,6 @@
 #define RVIZ_COMMON__VISUALIZATION_MANAGER_HPP_
 
 #include <deque>
-#include <memory>
 
 #include <QString>  // NOLINT: cpplint is unable to handle the include order here
 

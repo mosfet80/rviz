@@ -32,25 +32,16 @@
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__MARKER__MARKER_COMMON_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__MARKER__MARKER_COMMON_HPP_
 
-#include <map>
-#include <memory>
-#include <mutex>
-#include <set>
-#include <string>
-#include <vector>
-#include <utility>
-
-#include <OgreSceneNode.h>
-
-#include <QString>  // NOLINT: cpplint is unable to handle the include order here
+#include <cstdint>
 
 #include "resource_retriever/retriever.hpp"
-#include "visualization_msgs/msg/marker.hpp"
-#include "visualization_msgs/msg/marker_array.hpp"
-
 #include "rviz_common/properties/bool_property.hpp"
 #include "rviz_common/properties/status_property.hpp"
-#include "rviz_common/interaction/forwards.hpp"
+#include "visualization_msgs/msg/marker_array.hpp"
+#include <mutex>
+#include <set>
+#include <OgreSceneNode.h>
+
 
 #include "rviz_default_plugins/visibility_control.hpp"
 

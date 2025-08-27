@@ -32,8 +32,6 @@
 #ifndef RVIZ_DEFAULT_PLUGINS__DISPLAYS__MARKER__MARKERS__MARKER_BASE_HPP_
 #define RVIZ_DEFAULT_PLUGINS__DISPLAYS__MARKER__MARKERS__MARKER_BASE_HPP_
 
-#include <memory>
-#include <set>
 #include <string>
 #include <utility>
 

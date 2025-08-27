@@ -33,11 +33,6 @@
 #ifndef RVIZ_COMMON__INTERACTION__HANDLER_MANAGER_IFACE_HPP_
 #define RVIZ_COMMON__INTERACTION__HANDLER_MANAGER_IFACE_HPP_
 
-#include <iterator>
-#include <memory>
-#include <mutex>
-#include <unordered_map>
-
 #include "rviz_common/interaction/handler_manager_listener.hpp"
 #include "rviz_common/interaction/selection_handler.hpp"
 #include "rviz_common/visibility_control.hpp"

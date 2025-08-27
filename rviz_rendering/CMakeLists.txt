@@ -9,7 +9,7 @@ if(NOT CMAKE_CXX_STANDARD)
 endif()
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic -Wnon-virtual-dtor -Woverloaded-virtual)
+  add_compile_options(-Wall -Wextra -Wpedantic -Wnon-virtual-dtor -Woverloaded-virtual -no-pie)
 endif()
 
 # Tests currently only run on OS X @ OSRF jenkins
@@ -30,7 +30,7 @@ endif()
 find_package(ament_cmake_ros REQUIRED)
 
 # do find_package(rviz_ogre_vendor) first to make sure the custom OGRE is found
-find_package(rviz_ogre_vendor REQUIRED)
+find_package(OGRE REQUIRED)
 find_package(assimp REQUIRED)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
@@ -46,6 +46,8 @@ find_package(ament_index_cpp REQUIRED)
 find_package(eigen3_cmake_module REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(resource_retriever REQUIRED)
+find_package(zlib REQUIRED)
+
 
 # TODO(wjwwood): this block is to setup the windeployqt tool, could be removed later.
 if(Qt${QT_VERSION_MAJOR}_FOUND AND WIN32 AND TARGET Qt${QT_VERSION_MAJOR}::qmake AND NOT TARGET Qt${QT_VERSION_MAJOR}::windeployqt)
@@ -108,8 +110,8 @@ add_library(rviz_rendering SHARED
 
 target_link_libraries(rviz_rendering PUBLIC
   Qt${QT_VERSION_MAJOR}::Widgets
-  rviz_ogre_vendor::OgreMain
-  rviz_ogre_vendor::OgreOverlay
+  OgreMain
+
 )
 if(TARGET Eigen3::Eigen)
   # TODO(sloretz) require target to exist when https://github.com/ros2/choco-packages/issues/19 is addressed
@@ -122,12 +124,14 @@ target_link_libraries(rviz_rendering PRIVATE
   ament_index_cpp::ament_index_cpp
   assimp::assimp
   resource_retriever::resource_retriever
+  ${OGRE_Overlay_LIBRARIES}
 )
 
 target_include_directories(rviz_rendering
   PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include/${PROJECT_NAME}>
+    ${OGRE_INCLUDE_DIRS}/RenderSystems/glad/
 )
 # Causes the visibility macros to use dllexport rather than dllimport,
 # which is appropriate when building the dll but not consuming it.
@@ -136,7 +140,7 @@ target_compile_definitions(rviz_rendering PRIVATE "RVIZ_RENDERING_BUILDING_LIBRA
 ament_export_dependencies(
   Eigen3
   Qt${QT_VERSION_MAJOR}
-  rviz_ogre_vendor
+  OGRE
 )
 
 # Export old-style CMake variables
@@ -184,7 +188,7 @@ if(BUILD_TESTING)
     "TEST_RVIZ_RENDERING_BUILDING_LIBRARY")
   target_link_libraries(rviz_rendering_test_utils
     PUBLIC
-    rviz_ogre_vendor::OgreMain
+    OgreMain
     rviz_rendering
   )
 
@@ -198,7 +202,7 @@ if(BUILD_TESTING)
     ${SKIP_DISPLAY_TESTS})
   if(TARGET point_cloud_test_target)
     target_link_libraries(point_cloud_test_target
-      rviz_ogre_vendor::OgreMain
+      OgreMain
       rviz_rendering
       rviz_rendering_test_utils
       Qt${QT_VERSION_MAJOR}::Widgets  # explicitly do this for include directories (not necessary for external use)
@@ -210,7 +214,7 @@ if(BUILD_TESTING)
     ${SKIP_DISPLAY_TESTS})
   if(TARGET point_cloud_renderable_test_target)
     target_link_libraries(point_cloud_renderable_test_target
-      rviz_ogre_vendor::OgreMain
+      OgreMain
       rviz_rendering
       rviz_rendering_test_utils
       Qt${QT_VERSION_MAJOR}::Widgets  # explicitly do this for include directories (not necessary for external use)
@@ -222,7 +226,7 @@ if(BUILD_TESTING)
     ${SKIP_DISPLAY_TESTS})
   if(TARGET billboard_line_test_target)
     target_link_libraries(billboard_line_test_target
-      rviz_ogre_vendor::OgreMain
+      OgreMain
       rviz_rendering
       rviz_rendering_test_utils
       Qt${QT_VERSION_MAJOR}::Widgets  # explicitly do this for include directories (not necessary for external use)
@@ -234,7 +238,7 @@ if(BUILD_TESTING)
     ${SKIP_DISPLAY_TESTS})
   if(TARGET covariance_visual_test_target)
     target_link_libraries(covariance_visual_test_target
-      rviz_ogre_vendor::OgreMain
+      OgreMain
       rviz_rendering
       rviz_rendering_test_utils
       Qt${QT_VERSION_MAJOR}::Widgets  # explicitly do this for include directories (not necessary for external use)
@@ -246,7 +250,7 @@ if(BUILD_TESTING)
     ${SKIP_DISPLAY_TESTS})
   if(TARGET effort_visual_test_target)
     target_link_libraries(effort_visual_test_target
-      rviz_ogre_vendor::OgreMain
+      OgreMain
       rviz_rendering
       rviz_rendering_test_utils
       Qt${QT_VERSION_MAJOR}::Widgets  # explicitly do this for include directories (not necessary for external use)
@@ -258,7 +262,7 @@ if(BUILD_TESTING)
     ${SKIP_DISPLAY_TESTS})
   if(TARGET grid_test_target)
     target_link_libraries(grid_test_target
-      rviz_ogre_vendor::OgreMain
+      OgreMain
       rviz_rendering
       rviz_rendering_test_utils
       Qt${QT_VERSION_MAJOR}::Widgets  # explicitly do this for include directories (not necessary for external use)
@@ -270,8 +274,8 @@ if(BUILD_TESTING)
     ${SKIP_DISPLAY_TESTS})
   if(TARGET movable_text_test_target)
     target_link_libraries(movable_text_test_target
-      rviz_ogre_vendor::OgreMain
-      rviz_ogre_vendor::OgreOverlay
+      OgreMain
+      OgreOverlay
       rviz_rendering
       rviz_rendering_test_utils
       Qt${QT_VERSION_MAJOR}::Widgets
@@ -283,7 +287,7 @@ if(BUILD_TESTING)
     ${SKIP_DISPLAY_TESTS})
   if(TARGET line_test_target)
     target_link_libraries(line_test_target
-      rviz_ogre_vendor::OgreMain
+      OgreMain
       rviz_rendering
       rviz_rendering_test_utils
       Qt${QT_VERSION_MAJOR}::Widgets  # explicitly do this for include directories (not necessary for external use)
@@ -295,7 +299,7 @@ if(BUILD_TESTING)
     ${SKIP_DISPLAY_TESTS})
   if(TARGET screw_visual_test_target)
     target_link_libraries(screw_visual_test_target
-      rviz_ogre_vendor::OgreMain
+      OgreMain
       rviz_rendering
       rviz_rendering_test_utils
       Qt${QT_VERSION_MAJOR}::Widgets  # explicitly do this for include directories (not necessary for external use)
@@ -307,7 +311,7 @@ if(BUILD_TESTING)
     ${SKIP_DISPLAY_TESTS})
   if(TARGET triangle_polygon_visual_test_target)
     target_link_libraries(triangle_polygon_visual_test_target
-      rviz_ogre_vendor::OgreMain
+      OgreMain
       rviz_rendering
       rviz_rendering_test_utils
       Qt${QT_VERSION_MAJOR}::Widgets  # explicitly do this for include directories (not necessary for external use)
@@ -319,7 +323,7 @@ if(BUILD_TESTING)
     ${SKIP_DISPLAY_TESTS})
   if(TARGET wrench_visual_test_target)
     target_link_libraries(wrench_visual_test_target
-      rviz_ogre_vendor::OgreMain
+      OgreMain
       rviz_rendering
       rviz_rendering_test_utils
       Qt${QT_VERSION_MAJOR}::Widgets  # explicitly do this for include directories (not necessary for external use)
@@ -331,7 +335,7 @@ if(BUILD_TESTING)
     ${SKIP_DISPLAY_TESTS})
   if(TARGET mesh_shape_visual_test_target)
     target_link_libraries(mesh_shape_visual_test_target
-      rviz_ogre_vendor::OgreMain
+      OgreMain
       rviz_rendering
       rviz_rendering_test_utils
       Qt${QT_VERSION_MAJOR}::Widgets  # explicitly do this for include directories (not necessary for external use)

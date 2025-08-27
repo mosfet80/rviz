@@ -31,8 +31,6 @@
 
 #include "rviz_default_plugins/displays/tf/frame_info.hpp"
 
-#include <algorithm>
-
 #include <OgreSceneNode.h>
 
 #include <QString>  // NOLINT: cpplint is unable to handle the include order here

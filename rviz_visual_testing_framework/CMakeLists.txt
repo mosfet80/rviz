@@ -30,7 +30,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Test Widgets)
 find_package(rclcpp REQUIRED)
 find_package(rcutils REQUIRED)
 find_package(rviz_common REQUIRED)
-find_package(rviz_ogre_vendor REQUIRED)
+find_package(OGRE REQUIRED)
 find_package(rviz_rendering REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(tf2 REQUIRED)
@@ -77,7 +77,7 @@ target_link_libraries(rviz_visual_testing_framework PUBLIC
   rclcpp::rclcpp
   rcutils::rcutils
   rviz_common::rviz_common
-  rviz_ogre_vendor::OgreMain
+  OgreMain
   rviz_rendering::rviz_rendering
   ${std_msgs_TARGETS}
   tf2::tf2
@@ -91,7 +91,6 @@ ament_export_dependencies(
   rclcpp
   rcutils
   rviz_common
-  rviz_ogre_vendor
   rviz_rendering
   std_msgs
   tf2

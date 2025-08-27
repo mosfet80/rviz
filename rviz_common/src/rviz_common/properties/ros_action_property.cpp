@@ -33,6 +33,7 @@
 #include <vector>
 
 #include <QApplication>  // NOLINT: cpplint can't handle Qt imports
+#include <QList>  // NOLINT: cpplint can't handle Qt imports
 #include <QObject>  // NOLINT: cpplint can't handle Qt imports
 #include <QRegularExpression>  // NOLINT: cpplint can't handle Qt imports
 #include <QString>  // NOLINT: cpplint can't handle Qt imports

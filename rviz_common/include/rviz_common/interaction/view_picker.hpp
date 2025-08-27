@@ -35,9 +35,6 @@
 
 #include "rviz_common/interaction/view_picker_iface.hpp"
 
-#include <memory>
-#include <vector>
-
 #include <OgreMaterialManager.h>
 #include <OgreRenderQueueListener.h>
 #include <OgreVector.h>

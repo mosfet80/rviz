@@ -32,11 +32,6 @@
 #ifndef RVIZ_RENDERING__OBJECTS__AXES_HPP_
 #define RVIZ_RENDERING__OBJECTS__AXES_HPP_
 
-#include <cstddef>
-#include <cstdint>
-#include <memory>
-#include <vector>
-
 #include <OgreVector.h>
 
 #include "object.hpp"

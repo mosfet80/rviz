@@ -33,7 +33,6 @@
 
 #include <tf2_ros/message_filter.hpp>
 #include <memory>
-#include <string>
 
 #include <QString>  // NOLINT: cpplint is unable to handle the include order here
 

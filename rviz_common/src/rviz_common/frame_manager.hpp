@@ -32,11 +32,8 @@
 #ifndef RVIZ_COMMON__FRAME_MANAGER_HPP_
 #define RVIZ_COMMON__FRAME_MANAGER_HPP_
 
-#include <map>
-#include <memory>
 #include <mutex>
 #include <string>
-#include <vector>
 
 #include <OgreVector.h>
 #include <OgreQuaternion.h>

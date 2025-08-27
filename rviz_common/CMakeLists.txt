@@ -29,7 +29,7 @@ endif()
 
 find_package(ament_cmake REQUIRED)
 # do find_package(rviz_ogre_vendor) first to make sure the custom OGRE is found
-find_package(rviz_ogre_vendor REQUIRED)
+find_package(OGRE REQUIRED)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
@@ -66,7 +66,6 @@ set(ENV_CONFIG_CPP ${CMAKE_CURRENT_BINARY_DIR}/src/rviz_common/env_config.cpp)
 ament_package_xml()
 set(RVIZ_VERSION "${rviz_common_VERSION}")
 set(ROS_DISTRO "ROS 2")
-set(OGRE_PLUGIN_PATH "rviz_ogre_vendor")
 configure_file(src/rviz_common/env_config.cpp.in ${ENV_CONFIG_CPP} @ONLY)
 
 # These need to be added in the add_library() call
@@ -251,8 +250,7 @@ target_link_libraries(rviz_common PUBLIC
   pluginlib::pluginlib
   Qt${QT_VERSION_MAJOR}::Widgets
   rclcpp::rclcpp
-  rviz_ogre_vendor::OgreMain
-  rviz_ogre_vendor::OgreOverlay
+  OgreMain
   rviz_rendering::rviz_rendering
   ${sensor_msgs_TARGETS}
   ${std_msgs_TARGETS}
@@ -277,7 +275,6 @@ ament_export_dependencies(
   pluginlib
   Qt${QT_VERSION_MAJOR}
   rclcpp
-  rviz_ogre_vendor
   rviz_rendering
   sensor_msgs
   std_msgs
@@ -357,8 +354,7 @@ if(BUILD_TESTING)
   if(TARGET frame_manager_test)
     target_link_libraries(frame_manager_test
       rviz_common
-      rviz_ogre_vendor::OgreMain
-      rviz_ogre_vendor::OgreOverlay
+      OgreMain
     )
   endif()
 
@@ -368,8 +364,7 @@ if(BUILD_TESTING)
   if(TARGET rviz_common_config_test)
     target_link_libraries(rviz_common_config_test
       rviz_common
-      rviz_ogre_vendor::OgreMain
-      rviz_ogre_vendor::OgreOverlay
+      OgreMain
     )
   endif()
 
@@ -379,8 +374,7 @@ if(BUILD_TESTING)
   if(TARGET rviz_common_uniform_string_stream_test)
     target_link_libraries(rviz_common_uniform_string_stream_test
       rviz_common
-      rviz_ogre_vendor::OgreMain
-      rviz_ogre_vendor::OgreOverlay
+      OgreMain
     )
   endif()
 
@@ -428,8 +422,7 @@ if(BUILD_TESTING)
   if(TARGET selection_manager_test)
     target_link_libraries(selection_manager_test
       rviz_common
-      rviz_ogre_vendor::OgreMain
-      rviz_ogre_vendor::OgreOverlay
+      OgreMain
     )
   endif()
 
@@ -442,8 +435,7 @@ if(BUILD_TESTING)
   if(TARGET selection_handler_test)
     target_link_libraries(selection_handler_test
       rviz_common
-      rviz_ogre_vendor::OgreMain
-      rviz_ogre_vendor::OgreOverlay
+      OgreMain
     )
   endif()
 

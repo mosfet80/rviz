@@ -35,8 +35,6 @@
 
 #include "handler_manager_iface.hpp"
 
-#include <mutex>
-#include <vector>
 
 #include "rviz_common/interaction/forwards.hpp"
 #include "rviz_common/interaction/handler_manager_listener.hpp"
