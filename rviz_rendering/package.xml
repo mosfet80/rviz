@@ -32,6 +32,7 @@
   <build_depend>ament_index_cpp</build_depend>
   <build_depend>eigen</build_depend>
   <build_depend>qtbase5-dev</build_depend>
+  <build_depend>libglew-dev</build_depend>
   <build_depend>resource_retriever</build_depend>
   <build_depend>assimp-dev</build_depend>
   <build_depend>rviz_ogre_vendor</build_depend>
