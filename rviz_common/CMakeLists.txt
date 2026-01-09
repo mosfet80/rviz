@@ -28,7 +28,6 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 find_package(ament_cmake REQUIRED)
-# do find_package(rviz_ogre_vendor) first to make sure the custom OGRE is found
 find_package(OGRE REQUIRED)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
